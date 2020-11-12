@@ -1,5 +1,5 @@
 class CfgPatches {
-    classDK143_CustomFactions_TauSaCea{
+    class DK143_CustomFactions_TauSaCea{
         units[] = {
             "O_Tau_SaCea_Tau_Vehicle_Crew_Dal_Yth_01",
             "O_Tau_SaCea_Tau_Air_Caste_Pilot_01",
