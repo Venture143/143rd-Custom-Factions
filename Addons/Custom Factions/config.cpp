@@ -1,7 +1,7 @@
 
 class CfgPatches
 {
-	class DK143_ALIVE_COMPAT_Custom_Factions
+	class DK143_CustomFactions_Kitbash1
 	{
 		author = "Venture";
 		name = "DK143 TIOW ALIVE_COMPAT Custom Factions";
