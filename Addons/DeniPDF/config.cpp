@@ -1,5 +1,5 @@
 class CfgPatches {
-    class O_DeniPDF {
+    class DK143_CustomFactions_DeniPDF {
         units[] = {
             "O_DeniPDF_Deni_Regular_01",
             "O_DeniPDF_Deni_Plasmagunner_01",
