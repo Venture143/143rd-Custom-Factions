@@ -3,10 +3,10 @@
 
 class CfgPatches
 {
-	class DK143_ACE_Compat
+	class DK143_CustomFactions_Cadian
 	{
-		author = "Siggyfreed";
-		name = "DK143 TIOW ACE Compat";
+		author = "Venture";
+		name = "DK143 Cadian Faction Rework";
 		requiredAddons[] = 
         {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines"};
 		requiredVersion = 0.1;
