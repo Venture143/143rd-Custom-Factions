@@ -13,7 +13,7 @@ class CfgPatches {
 
 class CfgFactions {
     class DK143_O_OrkHordez {
-        displayName = "Ork Hordez";
+        displayName = "143rd Ork Hordez";
         side = 0;
         flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
         icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
@@ -24,10 +24,13 @@ class CfgFactions {
 class CfgGroups {
     class EAST {
         class DK143_O_OrkHordez {
-            name = "Ork Hordez"
+            name = "143rd Ork Hordez";
                 
             class Infantry {
                 name = "Infantry";
+		    class DK143_O_OrkHordez_Fireteam {
+			    name = "Gaggle of Boyz"
+		    };
             };
             
             class Motorized {
@@ -38,6 +41,9 @@ class CfgGroups {
             class Armored {
                 name = "Armored";
                 
+		    class DK143_O_OrkHordez_LootedTank {
+		    	name = "Looted Tank";
+		    };
             };
             
         };//Ork Hordez
@@ -144,4 +150,9 @@ class CfgVehicles {
 	respawnMagazines[] = {mag_10(TIOW_Krieg_LauncherFrag_mag),  mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
     };
     
+	//Vehicles
+	class DK143_O_OrkHordez_LR_Battlecannon_Black_OP : TIOW_Renegade_LR_Battlecannon_Black_OP {
+		Faction = "DK143_O_OrkHordez";
+		crew = "DK143_O_OrkSlugga";
+	};
 };
