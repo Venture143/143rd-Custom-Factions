@@ -1,8 +1,6 @@
 class CfgPatches {
     class DK143_CustomFactions_OrkHordez {
-        units[] = {
-
-        };
+        units[] = { "DK143_O_OrkHordez_LR_Battlecannon_Black_OP", "DK143_O_OrkBooma", "DK143_O_OrkDakka", "DK143_O_OrkBurna"};
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {"ace_common"};
@@ -29,8 +27,118 @@ class CfgGroups {
             class Infantry {
                 name = "Infantry";
 		    class DK143_O_OrkHordez_Fireteam {
-			    name = "Gaggle of Boyz"
-		    };
+			    name = "Gaggle of Boyz (Regular Fireteam)";
+			    side = 0;
+                    	    faction = "DK143_O_OrkHordez";
+                            icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+                            rarityGroup = 0.5;
+			   class Unit0 {
+				position[] = {0,0,0};
+				rank = "SERGEANT";
+				side = 0;
+				vehicle = "DK143_O_OrkBooma";
+			    };
+			    class Unit1 {
+				position[] = {5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkBooma";
+			    };
+			    class Unit2 {
+				position[] = {-5,-5,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_OrkDakka";
+			    };
+			    class Unit3 {
+				position[] = {10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkBooma";
+			    };
+			    class Unit4 {
+				position[] = {-10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkBooma";
+			    };
+		    }; //Regular Fireteam
+		    
+		    class DK143_O_OrkHordez_FireteamMelee {
+			    name = "Proppa Lads (melee Fireteam)"
+			    side = 0;
+                    	    faction = "DK143_O_OrkHordez";
+                            icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+                            rarityGroup = 0.4;
+			   class Unit0 {
+				position[] = {0,0,0};
+				rank = "SERGEANT";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit1 {
+				position[] = {5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit2 {
+				position[] = {-5,-5,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit3 {
+				position[] = {10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit4 {
+				position[] = {-10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+		    };// Melee Fireteam
+		    
+		    class DK143_O_OrkHordez_Fireteam {
+			    name = "Gaggle of Boyz (Regular Fireteam)";
+			    side = 0;
+                    	    faction = "DK143_O_OrkHordez";
+                            icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+                            rarityGroup = 0.1;
+			   class Unit0 {
+				position[] = {0,0,0};
+				rank = "SERGEANT";
+				side = 0;
+				vehicle = "DK143_O_OrkBooma";
+			    };
+			    class Unit1 {
+				position[] = {5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkBooma";
+			    };
+			    class Unit2 {
+				position[] = {-5,-5,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_OrkBurna";
+			    };
+			    class Unit3 {
+				position[] = {10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkBooma";
+			    };
+			    class Unit4 {
+				position[] = {-10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkBooma";
+			    };
+		    }; //Burna Fireteam
             };
             
             class Motorized {
@@ -43,7 +151,18 @@ class CfgGroups {
                 
 		    class DK143_O_OrkHordez_LootedTank {
 		    	name = "Looted Tank";
-		    };
+			side = 0;
+                    	faction = "DK143_O_OrkHordez";
+                        icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+                        rarityGroup = 0.8;
+			    
+			class Unit0 {
+				position[] = {0,0,0};
+				rank = "SERGEANT";
+				side = 0;
+				vehicle = "DK143_O_OrkHordez_LR_Battlecannon_Black_OP";
+			    }; 
+		    }; // Tank Group
             };
             
         };//Ork Hordez
@@ -152,6 +271,7 @@ class CfgVehicles {
     
 	//Vehicles
 	class DK143_O_OrkHordez_LR_Battlecannon_Black_OP : TIOW_Renegade_LR_Battlecannon_Black_OP {
+		name = "Some Gitz Tank";
 		Faction = "DK143_O_OrkHordez";
 		crew = "DK143_O_OrkSlugga";
 	};
