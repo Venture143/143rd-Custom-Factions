@@ -75,7 +75,8 @@ class CfgVehicles {
 
         identityTypes[] = {"Ork_Head"};
 
-        uniformClass = "Boy1Uni_OP";
+        uniformClass = "Naked1Uni_OP";
+	backpack = "Meow_Meow_Invisywisy_Invs";
     };
     
     // Melee Unit goes here
@@ -85,18 +86,41 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ork Burna";
+
+	linkedItems[] = {"ShootaBoyGear2","ArdBoyHelm2"};
+	respawnlinkedItems[] = {"ShootaBoyGear2","ArdBoyHelm2"};
+	
+	weapons[] = {"TIOW_Chaos_Flamer"};
+	respawnWeapons[] = {"TIOW_Chaos_Flamer"};
+	magazines[] = {mag_2(TIOW_Chaos_Flamer_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	respawnMagazines[] = {mag_2(TIOW_Chaos_Flamer_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
     };
     
     class DK143_O_OrkBooma : DK143_Base_OrkBoy {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ork BooMah";
+
+	linkedItems[] = {"ArdBoyGear2", "Catachan_Bandana"};
+	respawnlinkedItems[] = {"ArdBoyGear2", "Catachan_Bandana"};
+	
+	weapons[] = {"TIOW_Shotgun"};
+	respawnWeapons[] = {"TIOW_Shotgun"};
+	magazines[] = {mag_6(TIOW_Shotgun_pellets_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	respawnMagazines[] = {mag_6(TIOW_Shotgun_pellets_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
     };
     
     class DK143_O_OrkDakka : DK143_Base_OrkBoy {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ork Dakka";
+	    
+	linkedItems[] = {};
+	respawnlinkedItems[] = {};
+	weapons[] = {"TIOW_KriegLauncher", "TIOW_StubPistol"};
+	respawnWeapons[] = {"TIOW_KriegLauncher", "TIOW_StubPistol"};
+	magazines[] = {mag_5(TIOW_Krieg_LauncherFrag_mag), Mag_5(TIOW_Krieg_LauncherKrak_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	respawnMagazines[] = {mag_5(TIOW_Krieg_LauncherFrag_mag), Mag_5(TIOW_Krieg_LauncherKrak_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
     };
     
 };
