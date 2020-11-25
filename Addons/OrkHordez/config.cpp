@@ -63,6 +63,7 @@ class CfgVehicles {
 
 	// ARMA 3 Base Soldier Classes
 	class O_Soldier_base_F;
+	class O_soldier_Melee;
     
     // Base Ork Profile
     class DK143_Base_OrkBoy : O_Soldier_base_F {
@@ -80,7 +81,27 @@ class CfgVehicles {
     };
     
     // Melee Unit goes here
-    
+    class DK143_O_OrkSlugga : O_soldier_Melee {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Ork Slugga";
+	faction = "DK143_O_OrkHordez";
+
+        identityTypes[] = {"Ork_Head"};
+
+        uniformClass = "Naked1Uni_OP";
+	backpack = "Meow_Meow_Invisywisy_Invs";
+	    
+	linkedItems[] = {"ShootaBoyGear1"};
+	respawnlinkedItems[] = {"ShootaBoyGear1"};
+	    
+	weapons[] = {"Bat_Spike", "Shield_RoadSign_NoPeople"};
+	respawnWeapons[] = {"Bat_Spike", "Shield_RoadSign_NoPeople"};
+	    
+	magazines[] = {mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	respawnMagazines[] = {mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};    
+    };
+	
     // Units
     class DK143_O_OrkBurna : DK143_Base_OrkBoy {
         scope = 2;
@@ -119,8 +140,8 @@ class CfgVehicles {
 	respawnlinkedItems[] = {"ArdBoyGear1", "Catachan_Bandana"};
 	weapons[] = {"TIOW_KriegLauncher", "TIOW_StubPistol"};
 	respawnWeapons[] = {"TIOW_KriegLauncher", "TIOW_StubPistol"};
-	magazines[] = {mag_5(TIOW_Krieg_LauncherFrag_mag), Mag_5(TIOW_Krieg_LauncherKrak_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
-	respawnMagazines[] = {mag_5(TIOW_Krieg_LauncherFrag_mag), Mag_5(TIOW_Krieg_LauncherKrak_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	magazines[] = {mag_10(TIOW_Krieg_LauncherFrag_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	respawnMagazines[] = {mag_10(TIOW_Krieg_LauncherFrag_mag),  mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
     };
     
 };
