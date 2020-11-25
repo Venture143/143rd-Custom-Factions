@@ -115,8 +115,8 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Ork Dakka";
 	    
-	linkedItems[] = {};
-	respawnlinkedItems[] = {};
+	linkedItems[] = {"ArdBoyGear1", "Catachan_Bandana"};
+	respawnlinkedItems[] = {"ArdBoyGear1", "Catachan_Bandana"};
 	weapons[] = {"TIOW_KriegLauncher", "TIOW_StubPistol"};
 	respawnWeapons[] = {"TIOW_KriegLauncher", "TIOW_StubPistol"};
 	magazines[] = {mag_5(TIOW_Krieg_LauncherFrag_mag), Mag_5(TIOW_Krieg_LauncherKrak_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
