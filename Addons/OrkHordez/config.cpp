@@ -1,7 +1,7 @@
 class CfgPatches {
     class DK143_CustomFactions_OrkHordez {
 	name = "Ork Hordez (custom Faction)"
-        units[] = { "DK143_O_OrkHordez_LR_Battlecannon_Black_OP", "DK143_O_OrkBooma", "DK143_O_OrkDakka", "DK143_O_OrkBurna", "DK143_O_OrkSlugga", "DK143_O_OrkHordez_Trukk", "DK143_O_OrkHordez_Stompa"};
+        units[] = { "DK143_O_OrkHordez_LR_Battlecannon_Black_OP", "DK143_O_OrkBooma", "DK143_O_OrkDakka", "DK143_O_OrkBurna", "DK143_O_OrkSlugga", "DK143_O_OrkHordez_Trukk", "DK143_O_OrkHordez_Stompa", "DK143_O_LootedChimera","DK143_O_WarBoss", "DK143_O_Nob", "DK143_O_Ardboyz2", "DK143_O_Ardboyz1", "DK143_O_TankBusta2", "DK143_O_TankBusta1", "DK143_O_Shoota2", "DK143_O_Shoota1", "DK143_O_NakedOrk"};
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "Renegades_Foot", "Sashka_Russian"};
