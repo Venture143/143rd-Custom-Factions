@@ -1,7 +1,7 @@
 class CfgPatches {
     class DK143_CustomFactions_OrkHordez {
 	    name = "Ork Hordez (custom Faction)"
-        units[] = { "DK143_O_OrkHordez_LR_Battlecannon_Black_OP", "DK143_O_OrkBooma", "DK143_O_OrkDakka", "DK143_O_OrkBurna", "DK143_O_OrkSlugga"};
+        units[] = { "DK143_O_OrkHordez_LR_Battlecannon_Black_OP", "DK143_O_OrkBooma", "DK143_O_OrkDakka", "DK143_O_OrkBurna", "DK143_O_OrkSlugga", "DK143_O_OrkHordez_Trukk", "DK143_O_OrkHordez_Stompa"};
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "Renegades_Foot", "Sashka_Russian"};
@@ -10,9 +10,9 @@ class CfgPatches {
     };
 };
 
-class CfgFactions {
+class CfgFactionClasses {
     class DK143_O_OrkHordez {
-        name = "143rd Ork Hordez";
+        displayName = "143rd Ork Hordez";
         side = 0;
         flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
         icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
@@ -391,7 +391,7 @@ class CfgGroups {
 			side = 0;
                     	faction = "DK143_O_OrkHordez";
                         icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-                        rarityGroup = 0.8;
+                        rarityGroup = 0.1;
 			    
 			class Unit0 {
 				position[] = {0,0,0};
