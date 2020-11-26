@@ -23,416 +23,416 @@ class CfgFactionClasses {
 class CfgGroups {
     class EAST {
         class DK143_O_OrkHordez {
-         name = "143rd Ork Hordez";
-            class Infantry {
-                name = "Infantry";
+        	name = "143rd Ork Hordez";
+        	class Infantry {
+                	name = "Infantry";
 				
-				class DK143_O_OrkHordez_Fireteam {
-					name = "Gaggle of Boomahs";
+			class DK143_O_OrkHordez_Fireteam {
+				name = "Gaggle of Boomahs";
+				side = 0;
+				faction = "DK143_O_OrkHordez";
+				icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+				rarityGroup = 0.5;
+				class Unit0 {
+					position[] = {0,0,0};
+					rank = "SERGEANT";
 					side = 0;
-					faction = "DK143_O_OrkHordez";
-					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-					rarityGroup = 0.5;
-					class Unit0 {
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 0;
-						vehicle = "DK143_O_OrkBooma";
-					};
-					class Unit1 {
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_OrkBooma";
-					};
-					class Unit2 {
-						position[] = {-5,-5,0};
-						rank = "CORPORAL";
-						side = 0;
-						vehicle = "DK143_O_OrkDakka";
-					};
-					class Unit3 {
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_OrkBooma";
-					};
-					class Unit4 {
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_OrkBooma";
-					};
-				}; //Regular Fireteam
+					vehicle = "DK143_O_OrkBooma";
+				};
+				class Unit1 {
+					position[] = {5,-5,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_OrkBooma";
+				};
+				class Unit2 {
+					position[] = {-5,-5,0};
+					rank = "CORPORAL";
+					side = 0;
+					vehicle = "DK143_O_OrkDakka";
+				};
+				class Unit3 {
+					position[] = {10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_OrkBooma";
+				};
+				class Unit4 {
+					position[] = {-10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_OrkBooma";
+				};
+			}; //Regular Fireteam
 		    
-				class DK143_O_OrkHordez_Fireteam2 {
-					name = "Gaggle of Boyz";
+			class DK143_O_OrkHordez_Fireteam2 {
+				name = "Gaggle of Boyz";
+				side = 0;
+				faction = "DK143_O_OrkHordez";
+				icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+				rarityGroup = 0.5;
+				class Unit0 {
+					position[] = {0,0,0};
+					rank = "SERGEANT";
 					side = 0;
-					faction = "DK143_O_OrkHordez";
-					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-					rarityGroup = 0.5;
-					class Unit0 {
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 0;
-						vehicle = "DK143_O_Nob";
-					};
-					class Unit1 {
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_Shoota1";
-					};
-					class Unit2 {
-						position[] = {-5,-5,0};
-						rank = "CORPORAL";
-						side = 0;
-						vehicle = "DK143_O_TankBusta1";
-					};
-					class Unit3 {
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_Shoota2";
-					};
-					class Unit4 {
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_NakedOrk";
-					};
-				}; //Regular (TIOW) Fireteam
+					vehicle = "DK143_O_Nob";
+				};
+				class Unit1 {
+					position[] = {5,-5,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_Shoota1";
+				};
+				class Unit2 {
+					position[] = {-5,-5,0};
+					rank = "CORPORAL";
+					side = 0;
+					vehicle = "DK143_O_TankBusta1";
+				};
+				class Unit3 {
+					position[] = {10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_Shoota2";
+				};
+				class Unit4 {
+					position[] = {-10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_NakedOrk";
+				};
+			}; //Regular (TIOW) Fireteam
 		    
-				class DK143_O_OrkHordez_FireteamMelee {
-					name = "Proppa Lads (melee Fireteam)"
+			class DK143_O_OrkHordez_FireteamMelee {
+				name = "Proppa Lads (melee Fireteam)"
+				side = 0;
+				faction = "DK143_O_OrkHordez";
+				icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+				rarityGroup = 0.4;
+				class Unit0 {
+					position[] = {0,0,0};
+					rank = "SERGEANT";
 					side = 0;
-					faction = "DK143_O_OrkHordez";
-					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-					rarityGroup = 0.4;
-					class Unit0 {
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 0;
-						vehicle = "DK143_O_OrkSlugga";
-					};
-					class Unit1 {
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_OrkSlugga";
-					};
-					class Unit2 {
-						position[] = {-5,-5,0};
-						rank = "CORPORAL";
-						side = 0;
-						vehicle = "DK143_O_OrkSlugga";
-					};
-					class Unit3 {
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_OrkSlugga";
-					};
-					class Unit4 {
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_OrkSlugga";
-					};
-				};// Melee Fireteam
+					vehicle = "DK143_O_OrkSlugga";
+				};
+				class Unit1 {
+					position[] = {5,-5,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_OrkSlugga";
+				};
+				class Unit2 {
+					position[] = {-5,-5,0};
+					rank = "CORPORAL";
+					side = 0;
+					vehicle = "DK143_O_OrkSlugga";
+				};
+				class Unit3 {
+					position[] = {10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_OrkSlugga";
+				};
+				class Unit4 {
+					position[] = {-10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_OrkSlugga";
+				};
+			};// Melee Fireteam
 		    
-				class DK143_O_OrkHordez_BurnaFireteam {
-					name = "Gaggle of Burn'd Boyz (Burna Fireteam)";
+			class DK143_O_OrkHordez_BurnaFireteam {
+				name = "Gaggle of Burn'd Boyz (Burna Fireteam)";
+				side = 0;
+				faction = "DK143_O_OrkHordez";
+				icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+				rarityGroup = 0.1;
+				class Unit0 {
+					position[] = {0,0,0};
+					rank = "SERGEANT";
 					side = 0;
-					faction = "DK143_O_OrkHordez";
-					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-					rarityGroup = 0.1;
-					class Unit0 {
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 0;
-						vehicle = "DK143_O_OrkBooma";
-					};
-					class Unit1 {
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_OrkBooma";
-					};
-					class Unit2 {
-						position[] = {-5,-5,0};
-						rank = "CORPORAL";
-						side = 0;
-						vehicle = "DK143_O_OrkBurna";
-					};
-					class Unit3 {
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_OrkBooma";
-					};
-					class Unit4 {
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_OrkBooma";
-					};
-				}; //Burna Fireteam
-				
-				class DK143_O_OrkHordez_BoyzMob {
-                    name = "Boyz Mob (10)";
-                    side = 0;
-                    faction = "DK143_O_OrkHordez";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
-                    rarityGroup = 0.3;
-
-                    class Unit0 {
-                        position[] = {0,0,0};
-                        rank = "SERGEANT";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit1 {
-                        position[] = {5,-5,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Shoota1";
-                    };
-                    class Unit2 {
-                        position[] = {-5,-5,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Shoota1";
-                    };
-                    class Unit3 {
-                        position[] = {10,-10,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Shoota2";
-                    };
-                    class Unit4 {
-                        position[] = {-10,-10,0};
-                        rank = "CORPORAL";
-                        side = 0;
-                        vehicle = "DK143_O_TankBusta1";
-                    };
-                    class Unit5 {
-                        position[] = {15,-15,0};
-                        rank = "CORPORAL";
-                        side = 0;
-                        vehicle = "DK143_O_TankBusta2";
-                    };
-                    class Unit6 {
-                        position[] = {-15,-15,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Shoota2";
-                    };
-                    class Unit7 {
-                        position[] = {20,-20,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Shoota1";
-                    };
-                    class Unit8 {
-                        position[] = {-20,-20,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_NakedOrk";
-                    };
-                    class Unit9 {
-                        position[] = {25,-25,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_NakedOrk";
-                    };
-                };
-				
-				class DK143_O_OrkHordez_SluggaMob {
-                    name = "Slugga Mob (10)";
-                    side = 0;
-                    faction = "DK143_O_OrkHordez";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
-                    rarityGroup = 0.2;
-
-                    class Unit0 {
-                        position[] = {0,0,0};
-                        rank = "SERGEANT";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit1 {
-                        position[] = {5,-5,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_OrkSlugga";
-                    };
-                    class Unit2 {
-                        position[] = {-5,-5,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_OrkSlugga";
-                    };
-                    class Unit3 {
-                        position[] = {10,-10,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_OrkSlugga";
-                    };
-                    class Unit4 {
-                        position[] = {-10,-10,0};
-                        rank = "CORPORAL";
-                        side = 0;
-                        vehicle = "DK143_O_OrkSlugga";
-                    };
-                    class Unit5 {
-                        position[] = {15,-15,0};
-                        rank = "CORPORAL";
-                        side = 0;
-                        vehicle = "DK143_O_OrkSlugga";
-                    };
-                    class Unit6 {
-                        position[] = {-15,-15,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_OrkSlugga";
-                    };
-                    class Unit7 {
-                        position[] = {20,-20,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_OrkSlugga";
-                    };
-                    class Unit8 {
-                        position[] = {-20,-20,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_OrkSlugga";
-                    };
-                    class Unit9 {
-                        position[] = {25,-25,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_OrkSlugga";
-                    };
-                };
-            };
-			
-			class SpecOps {
-				name = "Specialized Squads";
-				
-				class DK143_O_OrkHordez_NobzMob {
-                    name = "Slugga Mob (10)";
-                    side = 0;
-                    faction = "DK143_O_OrkHordez";
-                    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
-                    rarityGroup = 0.2;
-
-                    class Unit0 {
-                        position[] = {0,0,0};
-                        rank = "SERGEANT";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit1 {
-                        position[] = {5,-5,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit2 {
-                        position[] = {-5,-5,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit3 {
-                        position[] = {10,-10,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit4 {
-                        position[] = {-10,-10,0};
-                        rank = "CORPORAL";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit5 {
-                        position[] = {15,-15,0};
-                        rank = "CORPORAL";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit6 {
-                        position[] = {-15,-15,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit7 {
-                        position[] = {20,-20,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit8 {
-                        position[] = {-20,-20,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                    class Unit9 {
-                        position[] = {25,-25,0};
-                        rank = "PRIVATE";
-                        side = 0;
-                        vehicle = "DK143_O_Nob";
-                    };
-                };
-				
-				class DK143_O_OrkHordez_TankbustaTeam {
-					name = "Gaggle of Tankbustas";
+					vehicle = "DK143_O_OrkBooma";
+				};
+				class Unit1 {
+					position[] = {5,-5,0};
+					rank = "PRIVATE";
 					side = 0;
-					faction = "DK143_O_OrkHordez";
-					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-					rarityGroup = 0.5;
-					class Unit0 {
-						position[] = {0,0,0};
-						rank = "SERGEANT";
-						side = 0;
-						vehicle = "DK143_O_TankBusta1";
-					};
-					class Unit1 {
-						position[] = {5,-5,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_TankBusta1";
-					};
-					class Unit2 {
-						position[] = {-5,-5,0};
-						rank = "CORPORAL";
-						side = 0;
-						vehicle = "DK143_O_TankBusta2";
-					};
-					class Unit3 {
-						position[] = {10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_TankBusta2";
-					};
-					class Unit4 {
-						position[] = {-10,-10,0};
-						rank = "PRIVATE";
-						side = 0;
-						vehicle = "DK143_O_TankBusta1";
-					};
-				}; 
+					vehicle = "DK143_O_OrkBooma";
+				};
+				class Unit2 {
+					position[] = {-5,-5,0};
+					rank = "CORPORAL";
+					side = 0;
+					vehicle = "DK143_O_OrkBurna";
+				};
+				class Unit3 {
+					position[] = {10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_OrkBooma";
+				};
+				class Unit4 {
+					position[] = {-10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_OrkBooma";
+				};
+			}; //Burna Fireteam
+				
+			class DK143_O_OrkHordez_BoyzMob {
+			    name = "Boyz Mob (10)";
+			    side = 0;
+			    faction = "DK143_O_OrkHordez";
+			    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
+			    rarityGroup = 0.3;
+
+			    class Unit0 {
+				position[] = {0,0,0};
+				rank = "SERGEANT";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit1 {
+				position[] = {5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Shoota1";
+			    };
+			    class Unit2 {
+				position[] = {-5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Shoota1";
+			    };
+			    class Unit3 {
+				position[] = {10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Shoota2";
+			    };
+			    class Unit4 {
+				position[] = {-10,-10,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_TankBusta1";
+			    };
+			    class Unit5 {
+				position[] = {15,-15,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_TankBusta2";
+			    };
+			    class Unit6 {
+				position[] = {-15,-15,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Shoota2";
+			    };
+			    class Unit7 {
+				position[] = {20,-20,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Shoota1";
+			    };
+			    class Unit8 {
+				position[] = {-20,-20,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_NakedOrk";
+			    };
+			    class Unit9 {
+				position[] = {25,-25,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_NakedOrk";
+			    };
 			};
-            
-            class Motorized {
-                name = "Motorized Infantry";
 				
-                class DK143_O_OrkHordez_TrukkBoomahSquad {
+			class DK143_O_OrkHordez_SluggaMob {
+			    name = "Slugga Mob (10)";
+			    side = 0;
+			    faction = "DK143_O_OrkHordez";
+			    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
+			    rarityGroup = 0.2;
+
+			    class Unit0 {
+				position[] = {0,0,0};
+				rank = "SERGEANT";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit1 {
+				position[] = {5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit2 {
+				position[] = {-5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit3 {
+				position[] = {10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit4 {
+				position[] = {-10,-10,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit5 {
+				position[] = {15,-15,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit6 {
+				position[] = {-15,-15,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit7 {
+				position[] = {20,-20,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit8 {
+				position[] = {-20,-20,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			    class Unit9 {
+				position[] = {25,-25,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_OrkSlugga";
+			    };
+			};
+       		};
+			
+		class SpecOps {
+			name = "Specialized Squads";
+				
+			class DK143_O_OrkHordez_NobzMob {
+			    name = "Nobz Mob (10)";
+			    side = 0;
+			    faction = "DK143_O_OrkHordez";
+			    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
+			    rarityGroup = 0.2;
+
+			    class Unit0 {
+				position[] = {0,0,0};
+				rank = "SERGEANT";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit1 {
+				position[] = {5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit2 {
+				position[] = {-5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit3 {
+				position[] = {10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit4 {
+				position[] = {-10,-10,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit5 {
+				position[] = {15,-15,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit6 {
+				position[] = {-15,-15,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit7 {
+				position[] = {20,-20,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit8 {
+				position[] = {-20,-20,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit9 {
+				position[] = {25,-25,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			};
+				
+			class DK143_O_OrkHordez_TankbustaTeam {
+				name = "Gaggle of Tankbustas";
+				side = 0;
+				faction = "DK143_O_OrkHordez";
+				icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+				rarityGroup = 0.5;
+				class Unit0 {
+					position[] = {0,0,0};
+					rank = "SERGEANT";
+					side = 0;
+					vehicle = "DK143_O_TankBusta1";
+				};
+				class Unit1 {
+					position[] = {5,-5,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_TankBusta1";
+				};
+				class Unit2 {
+					position[] = {-5,-5,0};
+					rank = "CORPORAL";
+					side = 0;
+					vehicle = "DK143_O_TankBusta2";
+				};
+				class Unit3 {
+					position[] = {10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_TankBusta2";
+				};
+				class Unit4 {
+					position[] = {-10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_TankBusta1";
+				};
+			}; 
+		};
+            
+            	class Motorized {
+			name = "Motorized Infantry";
+
+				class DK143_O_OrkHordez_TrukkBoomahSquad {
 					name = "Trukk Boomah Boyz";
 					side = 0;
 					faction = "DK143_O_OrkHordez";
@@ -443,70 +443,70 @@ class CfgGroups {
 						rank = "SERGEANT";
 						side = 0;
 						vehicle = "DK143_O_OrkHordez_Trukk";
-						};
+					};
 					class Unit1 {
 						position[] = {0,0,0};
 						rank = "SERGEANT";
 						side = 0;
 						vehicle = "DK143_O_OrkBooma";
-						};
+					};
 					class Unit2 {
 						position[] = {0,0,0};
 						rank = "CORPORAL";
 						side = 0;
 						vehicle = "DK143_O_OrkDakka";
-						};
+					};
 					class Unit3 {
 						position[] = {0,0,0};
 						rank = "CORPORAL";
 						side = 0;
 						vehicle = "DK143_O_OrkDakka";
-						};
+					};
 					class Unit4 {
 						position[] = {0,0,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_OrkBooma";
-						};
+					};
 					class Unit5 {
 						position[] = {0,0,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_OrkBooma";
-						};
+					};
 					class Unit6 {
 						position[] = {0,0,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_OrkBooma";
-						};
+					};
 					class Unit7 {
 						position[] = {0,0,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_OrkBooma";
-						};
+					};
 					class Unit8 {
 						position[] = {0,0,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_OrkBooma";
-						};
+					};
 					class Unit9 {
 						position[] = {0,0,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_OrkBooma";
-						};
-					class Unit11 {
+					};
+					class Unit10 {
 						position[] = {0,0,0};
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_OrkBooma";
-						};
+					};
 				}; // Regular Trukk
 		
-				 class DK143_O_OrkHordez_TrukkBurnaSquad {
+				class DK143_O_OrkHordez_TrukkBurnaSquad {
 					name = "Trukk Burn'd Boyz";
 					side = 0;
 					faction = "DK143_O_OrkHordez";
@@ -653,71 +653,71 @@ class CfgGroups {
 						vehicle = "DK143_O_OrkSlugga";
 						};
 				}; // Trukk Slugga Boyz
-            };
+            		};
             
 			class Mechanized {
 				name = "Mechanized";
-					class DK143_O_OrkHordez_ArmoreedTrukkSquad {
-						name = "Ard Trukk Boyz";
+				class DK143_O_OrkHordez_ArmoreedTrukkSquad {
+					name = "Ard Trukk Boyz";
+					side = 0;
+					faction = "DK143_O_OrkHordez";
+					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+					rarityGroup = 0.5;
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
 						side = 0;
-						faction = "DK143_O_OrkHordez";
-						icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-						rarityGroup = 0.5;
-						class Unit0 {
-							position[] = {0,0,0};
-							rank = "SERGEANT";
-							side = 0;
-							vehicle = "DK143_O_LootedChimera";
-							};
-						class Unit1 {
-							position[] = {0,0,0};
-							rank = "SERGEANT";
-							side = 0;
-							vehicle = "DK143_O_OrkBooma";
-							};
-						class Unit2 {
-							position[] = {0,0,0};
-							rank = "CORPORAL";
-							side = 0;
-							vehicle = "DK143_O_OrkDakka";
-							};
-						class Unit3 {
-							position[] = {0,0,0};
-							rank = "CORPORAL";
-							side = 0;
-							vehicle = "DK143_O_OrkDakka";
-							};
-						class Unit4 {
-							position[] = {0,0,0};
-							rank = "PRIVATE";
-							side = 0;
-							vehicle = "DK143_O_OrkBooma";
-							};
-						class Unit5 {
-							position[] = {0,0,0};
-							rank = "PRIVATE";
-							side = 0;
-							vehicle = "DK143_O_OrkBooma";
-							};
-						class Unit6 {
-							position[] = {0,0,0};
-							rank = "PRIVATE";
-							side = 0;
-							vehicle = "DK143_O_OrkBooma";
-							};
-					}; 
-			};
+						vehicle = "DK143_O_LootedChimera";
+					};
+					class Unit1 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_OrkBooma";
+					};
+					class Unit2 {
+						position[] = {0,0,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_OrkDakka";
+					};
+					class Unit3 {
+						position[] = {0,0,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_OrkDakka";
+					};
+					class Unit4 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_OrkBooma";
+					};
+					class Unit5 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_OrkBooma";
+					};
+					class Unit6 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_OrkBooma";
+					};
+				}; 
+			};// end of mechanized groups
 			
-            class Armored {
-                name = "Armored";
+           		 class Armored {
+                		name = "Armored";
                 
 				class DK143_O_OrkHordez_LootedTank {
 					name = "Looted Tank";
 					side = 0;
-                    faction = "DK143_O_OrkHordez";
-                    icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-                    rarityGroup = 0.8;
-			    
+					faction = "DK143_O_OrkHordez";
+					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+					rarityGroup = 0.8;
+
 					class Unit0 {
 						position[] = {0,0,0};
 						rank = "SERGEANT";
@@ -729,18 +729,17 @@ class CfgGroups {
 				class DK143_O_OrkHordez_Stompa {
 					name = "Stompa";
 					side = 0;
-                    faction = "DK143_O_OrkHordez";
-                    icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-                    rarityGroup = 0.01;
-			    
+					faction = "DK143_O_OrkHordez";
+					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+					 rarityGroup = 0.01;
 					class Unit0 {
 						position[] = {0,0,0};
 						rank = "SERGEANT";
 						side = 0;
 						vehicle = "DK143_O_OrkHordez_Stompa";
 					}; 
-				}; // Tank Group
-            };
+				}; // Stompa Group
+           		 };//Armored Groups
             
         };//Ork Hordez
     };//OPFOR GROUPS
@@ -798,14 +797,14 @@ class CfgVehicles {
     
 	// Melee Unit goes here
 	class DK143_O_OrkSlugga : O_soldier_Melee {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Ork Slugga";
+        	scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Slugga";
 		faction = "DK143_O_OrkHordez";
 
-        identityTypes[] = {"Ork_Head"};
+        	identityTypes[] = {"Ork_Head"};
 
-        uniformClass = "Naked1Uni_OP";
+        	uniformClass = "Naked1Uni_OP";
 		backpack = "Meow_Meow_Invisywisy_Invs";
 	    
 		linkedItems[] = {"ShootaBoyGear1"};
@@ -820,9 +819,9 @@ class CfgVehicles {
 	
 	// Units
 	class DK143_O_OrkBurna : DK143_Base_OrkBoy {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Ork Burna";
+        	scope = 2;
+        	scopeCurator = 2;
+       		displayName = "Ork Burna";
 
 		linkedItems[] = {"ShootaBoyGear2","ArdBoyHelm2"};
 		respawnlinkedItems[] = {"ShootaBoyGear2","ArdBoyHelm2"};
@@ -831,12 +830,12 @@ class CfgVehicles {
 		respawnWeapons[] = {"TIOW_Chaos_Flamer"};
 		magazines[] = {mag_2(TIOW_Chaos_Flamer_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
 		respawnMagazines[] = {mag_2(TIOW_Chaos_Flamer_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
-    };
+    	};
     
-    class DK143_O_OrkBooma : DK143_Base_OrkBoy {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Ork BooMah";
+    	class DK143_O_OrkBooma : DK143_Base_OrkBoy {
+       		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork BooMah";
 
 		linkedItems[] = {"ArdBoyGear2", "Catachan_Bandana"};
 		respawnlinkedItems[] = {"ArdBoyGear2", "Catachan_Bandana"};
@@ -845,12 +844,12 @@ class CfgVehicles {
 		respawnWeapons[] = {"TIOW_Shotgun"};
 		magazines[] = {mag_6(TIOW_Shotgun_pellets_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
 		respawnMagazines[] = {mag_6(TIOW_Shotgun_pellets_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
-    };
+   	 };
     
-    class DK143_O_OrkDakka : DK143_Base_OrkBoy {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Ork Dakka";
+    	class DK143_O_OrkDakka : DK143_Base_OrkBoy {
+        	scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Dakka";
 	    
 		linkedItems[] = {"ArdBoyGear1", "Catachan_Bandana"};
 		respawnlinkedItems[] = {"ArdBoyGear1", "Catachan_Bandana"};
@@ -858,9 +857,8 @@ class CfgVehicles {
 		respawnWeapons[] = {"TIOW_KriegLauncher", "TIOW_StubPistol"};
 		magazines[] = {mag_10(TIOW_Krieg_LauncherFrag_mag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
 		respawnMagazines[] = {mag_10(TIOW_Krieg_LauncherFrag_mag),  mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
-    };
-    
-	// Stuff Ported from TIOW
+    	};
+    // Stuff Ported from TIOW
 	class DK143_O_Shoota1 : ShootaBoy1_OP {faction = "DK143_O_OrkHordez";};
 	class DK143_O_NakedOrk : Naked1_OP {faction = "DK143_O_OrkHordez";};
 	class DK143_O_Shoota2: ShootaBoy2_OP {faction = "DK143_O_OrkHordez";};
