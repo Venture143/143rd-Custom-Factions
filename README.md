@@ -5,7 +5,7 @@ ALIVE Functionality:
 
   Enabled for: 
 
-    OPFOR: Cadians, Renegades, Tau, DeniPDF
+    OPFOR: Cadians, Renegades, Tau, DeniPDF, Ork Hordez
 
     INDEPENDANT: Cadians, Black Renegades, Mordians
 
