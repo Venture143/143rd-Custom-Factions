@@ -320,9 +320,47 @@ class CfgGroups {
 			
 		class SpecOps {
 			name = "Specialized Squads";
+			
+			class DK143_O_OrkHordez_ArdBoysFireteam {
+				name = "Gaggle of Ard Boyz";
+				side = 0;
+				faction = "DK143_O_OrkHordez";
+				icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+				rarityGroup = 0.5;
+				class Unit0 {
+					position[] = {0,0,0};
+					rank = "SERGEANT";
+					side = 0;
+					vehicle = "DK143_O_Ardboyz1";
+				};
+				class Unit1 {
+					position[] = {5,-5,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_Ardboyz1";
+				};
+				class Unit2 {
+					position[] = {-5,-5,0};
+					rank = "CORPORAL";
+					side = 0;
+					vehicle = "DK143_O_Ardboyz1";
+				};
+				class Unit3 {
+					position[] = {10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_Ardboyz2";
+				};
+				class Unit4 {
+					position[] = {-10,-10,0};
+					rank = "PRIVATE";
+					side = 0;
+					vehicle = "DK143_O_Ardboyz2";
+				};
+			}; //Regular Fireteam
 				
 			class DK143_O_OrkHordez_NobzMob {
-			    name = "Nobz Mob (10)";
+			    name = "Nobz Mob";
 			    side = 0;
 			    faction = "DK143_O_OrkHordez";
 			    icon = "\A3\uI_f\data\map\markers\nato\b_inf.paa";
@@ -355,36 +393,6 @@ class CfgGroups {
 			    class Unit4 {
 				position[] = {-10,-10,0};
 				rank = "CORPORAL";
-				side = 0;
-				vehicle = "DK143_O_Nob";
-			    };
-			    class Unit5 {
-				position[] = {15,-15,0};
-				rank = "CORPORAL";
-				side = 0;
-				vehicle = "DK143_O_Nob";
-			    };
-			    class Unit6 {
-				position[] = {-15,-15,0};
-				rank = "PRIVATE";
-				side = 0;
-				vehicle = "DK143_O_Nob";
-			    };
-			    class Unit7 {
-				position[] = {20,-20,0};
-				rank = "PRIVATE";
-				side = 0;
-				vehicle = "DK143_O_Nob";
-			    };
-			    class Unit8 {
-				position[] = {-20,-20,0};
-				rank = "PRIVATE";
-				side = 0;
-				vehicle = "DK143_O_Nob";
-			    };
-			    class Unit9 {
-				position[] = {25,-25,0};
-				rank = "PRIVATE";
 				side = 0;
 				vehicle = "DK143_O_Nob";
 			    };
@@ -503,6 +511,80 @@ class CfgGroups {
 						rank = "PRIVATE";
 						side = 0;
 						vehicle = "DK143_O_OrkBooma";
+					};
+				}; // Regular Trukk
+			
+				class DK143_O_OrkHordez_TrukkArdSquad {
+					name = "Trukk Ard Boyz";
+					side = 0;
+					faction = "DK143_O_OrkHordez";
+					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+					rarityGroup = 0.5;
+					 class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_OrkHordez_Trukk";
+					};
+					class Unit1 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz1";
+					};
+					class Unit2 {
+						position[] = {0,0,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz1";
+					};
+					class Unit3 {
+						position[] = {0,0,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz2";
+					};
+					class Unit4 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz2";
+					};
+					class Unit5 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz1";
+					};
+					class Unit6 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz1";
+					};
+					class Unit7 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz2";
+					};
+					class Unit8 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz2";
+					};
+					class Unit9 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz1";
+					};
+					class Unit10 {
+						position[] = {0,0,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_Ardboyz1";
 					};
 				}; // Regular Trukk
 		
