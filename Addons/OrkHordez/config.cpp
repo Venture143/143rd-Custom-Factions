@@ -1,6 +1,6 @@
 class CfgPatches {
     class DK143_CustomFactions_OrkHordez {
-	    name = "Ork Hordez (custom Faction)"
+	name = "Ork Hordez (custom Faction)"
         units[] = { "DK143_O_OrkHordez_LR_Battlecannon_Black_OP", "DK143_O_OrkBooma", "DK143_O_OrkDakka", "DK143_O_OrkBurna", "DK143_O_OrkSlugga", "DK143_O_OrkHordez_Trukk", "DK143_O_OrkHordez_Stompa"};
         weapons[] = {};
         requiredVersion = 1.62;
@@ -27,7 +27,7 @@ class CfgGroups {
             class Infantry {
                 name = "Infantry";
 		    class DK143_O_OrkHordez_Fireteam {
-			    name = "Gaggle of Boyz (Regular Fireteam)";
+			    name = "Gaggle of Boomahs";
 			    side = 0;
                     	    faction = "DK143_O_OrkHordez";
                             icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -63,6 +63,44 @@ class CfgGroups {
 				vehicle = "DK143_O_OrkBooma";
 			    };
 		    }; //Regular Fireteam
+		    
+		    class DK143_O_OrkHordez_Fireteam2 {
+			    name = "Gaggle of Boyz";
+			    side = 0;
+                    	    faction = "DK143_O_OrkHordez";
+                            icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+                            rarityGroup = 0.5;
+			   class Unit0 {
+				position[] = {0,0,0};
+				rank = "SERGEANT";
+				side = 0;
+				vehicle = "DK143_O_Nob";
+			    };
+			    class Unit1 {
+				position[] = {5,-5,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Shoota1";
+			    };
+			    class Unit2 {
+				position[] = {-5,-5,0};
+				rank = "CORPORAL";
+				side = 0;
+				vehicle = "DK143_O_TankBusta1";
+			    };
+			    class Unit3 {
+				position[] = {10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_Shoota2";
+			    };
+			    class Unit4 {
+				position[] = {-10,-10,0};
+				rank = "PRIVATE";
+				side = 0;
+				vehicle = "DK143_O_NakedOrk";
+			    };
+		    }; //Regular (TIOW) Fireteam
 		    
 		    class DK143_O_OrkHordez_FireteamMelee {
 			    name = "Proppa Lads (melee Fireteam)"
@@ -145,8 +183,8 @@ class CfgGroups {
             
             class Motorized {
                 name = "Motorized Infantry";
-                class DK143_O_OrkHordez_TrukkSquad {
-			name = "Trukk Boyz";
+                class DK143_O_OrkHordez_TrukkBoomahSquad {
+			name = "Trukk Boomah Boyz";
 			side = 0;
                     	faction = "DK143_O_OrkHordez";
                         icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
@@ -165,55 +203,55 @@ class CfgGroups {
 			    };
 			class Unit2 {
 				position[] = {0,0,0};
-				rank = "SERGEANT";
+				rank = "CORPORAL";
 				side = 0;
 				vehicle = "DK143_O_OrkDakka";
 			    };
 			class Unit3 {
 				position[] = {0,0,0};
-				rank = "SERGEANT";
+				rank = "CORPORAL";
 				side = 0;
 				vehicle = "DK143_O_OrkDakka";
 			    };
 			class Unit4 {
 				position[] = {0,0,0};
-				rank = "SERGEANT";
+				rank = "PRIVATE";
 				side = 0;
 				vehicle = "DK143_O_OrkBooma";
 			    };
 			class Unit5 {
 				position[] = {0,0,0};
-				rank = "SERGEANT";
+				rank = "PRIVATE";
 				side = 0;
 				vehicle = "DK143_O_OrkBooma";
 			    };
 			class Unit6 {
 				position[] = {0,0,0};
-				rank = "SERGEANT";
+				rank = "PRIVATE";
 				side = 0;
 				vehicle = "DK143_O_OrkBooma";
 			    };
 			class Unit7 {
 				position[] = {0,0,0};
-				rank = "SERGEANT";
+				rank = "PRIVATE";
 				side = 0;
 				vehicle = "DK143_O_OrkBooma";
 			    };
 			class Unit8 {
 				position[] = {0,0,0};
-				rank = "SERGEANT";
+				rank = "PRIVATE";
 				side = 0;
 				vehicle = "DK143_O_OrkBooma";
 			    };
 			class Unit9 {
 				position[] = {0,0,0};
-				rank = "SERGEANT";
+				rank = "PRIVATE";
 				side = 0;
 				vehicle = "DK143_O_OrkBooma";
 			    };
 			class Unit11 {
 				position[] = {0,0,0};
-				rank = "SERGEANT";
+				rank = "PRIVATE";
 				side = 0;
 				vehicle = "DK143_O_OrkBooma";
 			    };
@@ -426,26 +464,37 @@ class CfgVehicles {
 // ARMA 3 Base Soldier Classes
 class O_Soldier_base_F;
 class O_soldier_Melee;
+//Stuff from TIOW
 class TIOW_Renegade_LR_Battlecannon_Black_OP;
 class TIOW_Stompa_01_ds_OP;
 class Trukk1_OP;
+class ShootaBoy1_OP;
+class Naked1_OP;
+class ShootaBoy2_OP;
+class TankBusta1_OP;
+class TankBusta2_OP;
+class ArdBoy1_OP;
+class ArdBoy2_OP;
+class Boss1_OP;//Nob
+class Boss2_OP;//Warboss
+
 // Base Ork Profile
 class DK143_Base_OrkBoy : O_Soldier_base_F {
-		author = "VGm. Venture";
-		scope = 0;
-		scopeCurator = 0;
-		displayName = "Ork Base Dude";
-		side = 0;
-		faction = "DK143_O_OrkHordez";
+	author = "VGm. Venture";
+	scope = 0;
+	scopeCurator = 0;
+	displayName = "Ork Base Dude";
+	side = 0;
+	faction = "DK143_O_OrkHordez";
 
-		identityTypes[] = {"Ork_Head"};
+	identityTypes[] = {"Ork_Head"};
 
-		uniformClass = "Naked1Uni_OP";
-		backpack = "Meow_Meow_Invisywisy_Invs";
-	};
+	uniformClass = "Naked1Uni_OP";
+	backpack = "Meow_Meow_Invisywisy_Invs";
+};
     
-    // Melee Unit goes here
-    class DK143_O_OrkSlugga : O_soldier_Melee {
+// Melee Unit goes here
+class DK143_O_OrkSlugga : O_soldier_Melee {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ork Slugga";
@@ -464,10 +513,10 @@ class DK143_Base_OrkBoy : O_Soldier_base_F {
 	    
 	magazines[] = {mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
 	respawnMagazines[] = {mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};    
-    };
+};
 	
-    // Units
-    class DK143_O_OrkBurna : DK143_Base_OrkBoy {
+// Units
+class DK143_O_OrkBurna : DK143_Base_OrkBoy {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ork Burna";
@@ -508,19 +557,30 @@ class DK143_Base_OrkBoy : O_Soldier_base_F {
 	respawnMagazines[] = {mag_10(TIOW_Krieg_LauncherFrag_mag),  mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
     };
     
+	// Stuff Ported from TIOW
+	class DK143_O_Shoota1 : ShootaBoy1_OP {faction = "DK143_O_OrkHordez";};
+	class DK143_O_NakedOrk : Naked1_OP {faction = "DK143_O_OrkHordez";};
+	class DK143_O_Shoota2: ShootaBoy2_OP {faction = "DK143_O_OrkHordez";};
+	class DK143_O_TankBusta1 : TankBusta1_OP {faction = "DK143_O_OrkHordez";};
+	class DK143_O_TankBusta2 : TankBusta2_OP  {faction = "DK143_O_OrkHordez";};
+	class DK143_O_Ardboyz1 : ArdBoy1_OP  {faction = "DK143_O_OrkHordez";};
+	class DK143_O_Ardboyz2 : ArdBoy2_OP {faction = "DK143_O_OrkHordez";};
+	class DK143_O_Nob : Boss1_OP {faction = "DK143_O_OrkHordez"; displayName = "Nob";};//Nob
+	class DK143_O_WarBoss : Boss2_OP {faction = "DK143_O_OrkHordez"; displayname = "Warboss";};//Warboss
+	
 	//Vehicles
 	class DK143_O_OrkHordez_LR_Battlecannon_Black_OP : TIOW_Renegade_LR_Battlecannon_Black_OP {
 		displayName = "Some Gitz Tank";
 		Faction = "DK143_O_OrkHordez";
 		crew = "DK143_O_OrkBooma";
 	};
-	
+
 	class DK143_O_OrkHordez_Stompa : TIOW_Stompa_01_ds_OP {
 		displayName = "Stompa";
 		Faction = "DK143_O_OrkHordez";
 		crew = "DK143_O_OrkBooma";
 	};
-	
+
 	class DK143_O_OrkHordez_Trukk : Trukk1_OP {
 		displayName = "Trukk";
 		Faction = "DK143_O_OrkHordez";
