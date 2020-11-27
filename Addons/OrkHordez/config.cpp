@@ -1,7 +1,7 @@
 class CfgPatches {
     class DK143_CustomFactions_OrkHordez {
 	name = "Ork Hordez (custom Faction)"
-        units[] = { "DK143_O_OrkHordez_LR_Battlecannon_Black_OP", "DK143_O_OrkBooma", "DK143_O_OrkDakka", "DK143_O_OrkBurna", "DK143_O_OrkSlugga", "DK143_O_OrkHordez_Trukk", "DK143_O_OrkHordez_Stompa", "DK143_O_LootedChimera","DK143_O_WarBoss", "DK143_O_Nob", "DK143_O_Ardboyz2", "DK143_O_Ardboyz1", "DK143_O_TankBusta2", "DK143_O_TankBusta1", "DK143_O_Shoota2", "DK143_O_Shoota1", "DK143_O_NakedOrk"};
+        units[] = { "DK143_O_LootedValk", "DK143_O_MegaDeffKopta", "DK143_O_DeffKopta", "DK143_O_DeffKoptaRokkit", "DK143_O_OrkHordez_LR_Battlecannon_Black_OP", "DK143_O_OrkBooma", "DK143_O_OrkDakka", "DK143_O_OrkBurna", "DK143_O_OrkSlugga", "DK143_O_OrkHordez_Trukk", "DK143_O_OrkHordez_Stompa", "DK143_O_LootedChimera","DK143_O_WarBoss", "DK143_O_Nob", "DK143_O_Ardboyz2", "DK143_O_Ardboyz1", "DK143_O_TankBusta2", "DK143_O_TankBusta1", "DK143_O_Shoota2", "DK143_O_Shoota1", "DK143_O_NakedOrk"};
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "Renegades_Foot", "Sashka_Russian"};
@@ -852,6 +852,10 @@ class CfgVehicles {
 	class TIOW_Stompa_01_ds_OP;
 	class Trukk1_OP;
 	class _82ndChimAuto_OP;
+	class Deffkopta_01_0;
+	class Deffkopta_02_0;
+	class MDK_0;
+	class Valkyrie_Looted_0;
 	class ShootaBoy1_OP;
 	class Naked1_OP;
 	class ShootaBoy2_OP;
@@ -971,8 +975,31 @@ class CfgVehicles {
 	};
 	
 	class DK143_O_LootedChimera :  _82ndChimAuto_OP {
-		scopeCurator = 2;
 		displayName = "Some Gitz Ard Trukk";
+		Faction = "DK143_O_OrkHordez";
+		crew = "DK143_O_OrkBooma";
+	};
+	
+	class DK143_O_DeffKoptaRokkit : Deffkopta_01_0 {
+		displayName = "Deff Kopta Rokkit";
+		Faction = "DK143_O_OrkHordez";
+		crew = "DK143_O_OrkBooma";
+	};
+	
+	class DK143_O_DeffKopta : Deffkopta_02_0 {
+		displayName = "Deff Kopta";
+		Faction = "DK143_O_OrkHordez";
+		crew = "DK143_O_OrkBooma";
+	};
+	
+	class DK143_O_MegaDeffKopta :  MDK_0 {
+		displayName = "Mega Deff Kopta";
+		Faction = "DK143_O_OrkHordez";
+		crew = "DK143_O_OrkBooma";
+	};
+	
+	class DK143_O_LootedValk : Valkyrie_Looted_0 {
+		displayName = "Some Gitz Valk're";
 		Faction = "DK143_O_OrkHordez";
 		crew = "DK143_O_OrkBooma";
 	};
