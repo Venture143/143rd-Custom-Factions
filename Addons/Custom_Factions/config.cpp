@@ -1,4 +1,3 @@
-
 class CfgPatches
 {
 	class DK143_CustomFactions_Kitbash1
@@ -7,8 +6,63 @@ class CfgPatches
 		name = "DK143 TIOW ALIVE_COMPAT Custom Factions";
 		requiredAddons[] = 
         {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "AM_weapons", "IC_CAD_WEAPONS", "SG1_tech_Pat"};
-		requiredVersion = 0.1;
-		units[] = {};
+        requiredVersion = 1.62;
+		units[] = {"DK143_I_CDF_Squadleader",
+"DK143_I_CDF_AT_Launcher",
+"DK143_I_CDF_Plasmagunner",
+"DK143_I_CDF_Meltagunner",
+"DK143_I_CDF_Longlasman",
+"DK143_I_CDF_Machinegunner_Medium_Stubber",
+"DK143_I_CDF_Rifleman",
+"DK143_I_EmpAlleyFighters_Stubber",
+"DK143_I_EmpAlleyFighters_PlasmaTrooper",
+"DK143_I_EmpAlleyFighters_CQCTrooper",
+"DK143_I_EmpAlleyFighters_ATTrooper",
+"DK143_I_EmpAlleyFighters_Trooper",
+"DK143_I_ArgosIV_AirSniper",
+"DK143_I_ArgosIV_Sniper",
+"DK143_I_ArgosIV_GrenadeLauncherAir",
+"DK143_I_ArgosIV_GrenadeLauncher",
+"DK143_I_ArgosIV_TrooperAirbourne",
+"DK143_I_ArgosIV_Trooper",
+"DK143_B_EmpAlleyFighters_Stubber",
+"DK143_B_EmpAlleyFighters_PlasmaTrooper",
+"DK143_B_EmpAlleyFighters_CQCTrooper",
+"DK143_B_EmpAlleyFighters_ATTrooper",
+"DK143_B_EmpAlleyFighters_Trooper",
+"DK143_B_ArgosIV_AirSniper",
+"DK143_B_ArgosIV_Sniper",
+"DK143_B_ArgosIV_GrenadeLauncherAir",
+"DK143_B_ArgosIV_GrenadeLauncher",
+"DK143_B_ArgosIV_TrooperAirbourne",
+"DK143_B_ArgosIV_Trooper",
+"DK143_O_CornelliaRebelsPlasmagunner",
+"DK143_O_CornelliaRebelsAT_Launcher",
+"DK143_O_CornelliaRebelsSquadleader",
+"DK143_O_CornelliaRebelsMeltagunner",
+"DK143_O_CornelliaRebelsMedium_Stubber",
+"DK143_O_CornelliaRebelsAutorifleman",
+"DK143_O_CornelliaRebelsRifleman",
+"DK143_O_AgaWill_Melta",
+"DK143_O_AgaWill_Plasma",
+"DK143_O_AgaWill_Stubber",
+"DK143_O_AgaWill_Riflemen",
+"DK143_O_AdmechSkitarii_Vanguard_Alpha2",
+"DK143_O_AdmechSkitarii_Vanguard_Alpha",
+"DK143_O_AdmechSkitarii_Vanguard_Plasma",
+"DK143_O_AdmechSkitarii_Ranger_Alpha",
+"DK143_O_AdmechSkitarii_Ranger_AT_Rifle",
+"DK143_O_AdmechSkitarii_Vanguard",
+"DK143_O_AdmechSkitarii_Ranger",
+"DK143_O_Farsight_Dominate_RailRifle",
+"DK143_O_Farsight_Dominate_IonRifle",
+"DK143_O_Farsight_Dominate_Marksmen",
+"DK143_O_Farsight_Dominate_Rifleman",
+"DK143_O_Nurgle_Cultist_SquadLeader",
+"DK143_O_Nurgle_Cultist_ML",
+"DK143_O_Nurgle_Cultist_Plasmagun",
+"DK143_O_Nurgle_Cultist_Melta",
+"DK143_O_Nurgle_Cultist_Rifleman",};
 		weapons[] = {};
 		worlds[] = {};
 	};
