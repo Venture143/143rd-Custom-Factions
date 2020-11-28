@@ -1719,7 +1719,7 @@ class CfgGroups {
 				};
 							
 				class DK143_B_ArgosIV_Airfireteam {
-					name = "Fireteam";
+					name = "Airbourne Fireteam";
 					side = 1;
 					faction = "DK143_B_ArgosIV";
 					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
@@ -1752,7 +1752,7 @@ class CfgGroups {
 				};
 				
 				class DK143_B_ArgosIV_AirSquad {
-					name = "Squad";
+					name = "Airbourne Squad";
 					side = 1;
 					faction = "DK143_B_ArgosIV";
 					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
