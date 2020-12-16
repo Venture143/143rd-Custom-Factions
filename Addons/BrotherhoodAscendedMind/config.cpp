@@ -36,27 +36,6 @@ class CfgGroups {
 class CfgVehicles
 {
         //Handle Weapons With Attachements (and Cry on the inside)
-        class TIOW_BP_Heavy_Stubber;
-        class DK143_BP_HvySTubberDMS : TIOW_BP_Heavy_Stubber {
-	 scope = 1;
-	 class LinkedItems {
-
-		class LinkedItemsOptic {
-			slot = "CowsSlot";
-			item = "optic_DMS";
-		};
-
-		class LinkedItemsAcc {
-			slot = "PointerSlot";
-			item = "acc_pointer_IR";
-		};
-                
-		class LinkedItemsUnder {
-			slot = "UnderBarrelSlot";
-			item = "BP_Heavy_Stubber_bipod_unfolded";
-		};
-	  };
-        };
 	// Define Macros
 	/// Magazines macros definition ///
 	#define mag_2(a) a, a
@@ -70,7 +49,12 @@ class CfgVehicles
 	#define mag_10(a) a, a, a, a, a, a, a, a, a, a
 	#define mag_11(a) a, a, a, a, a, a, a, a, a, a, a
 	#define mag_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+	/// Equipment list macros definition ///
 
+	#define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
+	#define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
+	#define item_xx(a,b) class _xx_##a {name = a; count = b;}
+	
 	// ARMA 3 Base Soldier Classes
 	class O_Soldier_base_F;
   // Backpacks (I hate you arma)
@@ -81,7 +65,7 @@ class CfgVehicles
                 
 	};
 	class TransportMagazines {
-	        mag_5(MLAT_Mag);
+		mag_xx(MLAT_Mag, 5);
 	};
   };
         
@@ -120,8 +104,8 @@ class CfgVehicles
     scopeCurator = 2;
     displayName = "Stubberman";
     // Give AI gun
-    weapons[] = {"DK143_BP_HvySTubberDMS"};
-    respawnWeapons[] = {"DK143_BP_HvySTubberDMS"};
+    weapons[] = {"TIOW_BP_Heavy_Stubber"};
+    respawnWeapons[] = {"TIOW_BP_Heavy_Stubber"};
     // Give AI boolets
     magazines[] = {mag_12(TIOW_150Rnd_Stubber_expander), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
     respawnMagazines[] = {mag_12(TIOW_150Rnd_Stubber_expander), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
