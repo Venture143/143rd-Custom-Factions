@@ -35,6 +35,28 @@ class CfgGroups {
 
 class CfgVehicles
 {
+        //Handle Weapons With Attachements (and Cry on the inside)
+        class TIOW_BP_Heavy_Stubber;
+        class DK143_BP_HvySTubberDMS : TIOW_BP_Heavy_Stubber {
+	 scope = 1;
+	 class LinkedItems {
+
+		class LinkedItemsOptic {
+			slot = "CowsSlot";
+			item = "optic_DMS";
+		};
+
+		class LinkedItemsAcc {
+			slot = "PointerSlot";
+			item = "acc_pointer_IR";
+		};
+                
+		class LinkedItemsUnder {
+			slot = "UnderBarrelSlot";
+			item = "BP_Heavy_Stubber_bipod_unfolded";
+		};
+	  };
+        };
 	// Define Macros
 	/// Magazines macros definition ///
 	#define mag_2(a) a, a
@@ -51,7 +73,18 @@ class CfgVehicles
 
 	// ARMA 3 Base Soldier Classes
 	class O_Soldier_base_F;
-  
+  // Backpacks (I hate you arma)
+  class Ren_Backpack_02_black;
+  class DK143_BthrAscMind_RocketManBackpack : Ren_Backpack_02_black {
+	scope = 1;
+	class TransportItems {
+                
+	};
+	class TransportMagazines {
+	        mag_5(MLAT_Mag);
+	};
+  };
+        
   // BAse Config Class
   class DK143_Base_BthrAscMind : O_Soldier_base_F {
     scope = 0;
@@ -81,4 +114,55 @@ class CfgVehicles
     magazines[] = {mag_12(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
     respawnMagazines[] = {mag_12(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
   };
+  
+  class DK143_O_BthrAscMind_Stubber : DK143_Base_BthrAscMind {
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Stubberman";
+    // Give AI gun
+    weapons[] = {"DK143_BP_HvySTubberDMS"};
+    respawnWeapons[] = {"DK143_BP_HvySTubberDMS"};
+    // Give AI boolets
+    magazines[] = {mag_12(TIOW_150Rnd_Stubber_expander), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    respawnMagazines[] = {mag_12(TIOW_150Rnd_Stubber_expander), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+  };
+  
+  class DK143_O_BthrAscMind_Melta : DK143_Base_BthrAscMind {
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Meltaman";
+    // Give AI gun
+    weapons[] = {"TIOW_MeltaGun_01"};
+    respawnWeapons[] = {"TIOW_MeltaGun_01"};
+    // Give AI boolets
+    magazines[] = {mag_12(TIOW_Meltagun_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    respawnMagazines[] = {mag_12(TIOW_Meltagun_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+  };
+      
+  class DK143_O_BthrAscMind_Plasma : DK143_Base_BthrAscMind {
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Plasmaman";
+    // Give AI gun
+    weapons[] = {"Chaos_PlasmaGun"};
+    respawnWeapons[] = {"Chaos_PlasmaGun"};
+    // Give AI boolets
+    magazines[] = {mag_12(DK_Overcharge_PlasmaGun_Flask), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    respawnMagazines[] = {mag_12(DK_Overcharge_PlasmaGun_Flask), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+  };
+        
+  class DK143_O_BthrAscMind_Rocket : Dk143_Base_BthrAscMind {
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Rocketman";
+    // Give AI gun
+    weapons[] = {"ic_cad_galaxy_lasgun"};
+    respawnWeapons[] = {"ic_cad_galaxy_lasgun"};
+    // Give AI boolets
+    magazines[] = {mag_12(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    respawnMagazines[] = {mag_12(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    backpack = "DK143_BthrAscMind_RocketManBackpack";
+  };
+        
+
 };
