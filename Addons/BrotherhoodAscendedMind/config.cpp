@@ -61,10 +61,12 @@ class CfgVehicles
     cost = 1;
     side = 0;
     identityTypes[] = {"Head_Chaos","LanguageENGB"};
-    uniformClass = "CadTnkUni667th";
+    uniformClass = "CadTnkUni667th_OP";
     backpack = "Ren_Backpack_02_black";
-    linkedItems[] = {"ML700_ML_Cadian_Armor5_Armor","TIOW_RenEnforcerMask_1","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "ML700_BP_Photo_NVG", ["Laserdesignator","","","",["Laserbatteries",1],[],""]};
-		respawnlinkedItems[] = {"ML700_ML_Cadian_Armor5_Armor","TIOW_RenEnforcerMask_1","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "ML700_BP_Photo_NVG", ["Laserdesignator","","","",["Laserbatteries",1],[],""]};
+    items[] = {mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_4(ACE_quikclot), mag_10(ACE_CableTie)};
+    respawnItems[] = {mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_4(ACE_quikclot), mag_10(ACE_CableTie)};
+    linkedItems[] = {"ML700_ML_Cadian_Armor5_Armor","TIOW_RenEnforcerMask_1","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "ML700_BP_Photo_NVG", "Laserdesignator"};
+    respawnlinkedItems[] = {"ML700_ML_Cadian_Armor5_Armor","TIOW_RenEnforcerMask_1","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "ML700_BP_Photo_NVG", "Laserdesignator"};
   };
   
   //Actual Units
@@ -72,9 +74,11 @@ class CfgVehicles
     scope = 2;
     scopeCurator = 2;
     displayName = "Rifleman";
-    uniformClass = ["CadTnkUni667th",[["ACE_quikclot",40],["ACE_CableTie",10],["TIOW_ig_krak_grenade_mag",3,1]]];
-    linkedItems[] = {["ML700_ML_Cadian_Armor5_Armor",[["ic_las_powerpack",8,60]]],"TIOW_RenEnforcerMask_1","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "ML700_BP_Photo_NVG", ["Laserdesignator","","","",["Laserbatteries",1],[],""]};
-		respawnlinkedItems[] = {["ML700_ML_Cadian_Armor5_Armor",[["ic_las_powerpack",8,60]]],"TIOW_RenEnforcerMask_1","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "ML700_BP_Photo_NVG", ["Laserdesignator","","","",["Laserbatteries",1],[],""]};
-    backpack = ["Ren_Backpack_02_black",[["ic_las_powerpack",13,60]]];
+    // Give AI gun
+    weapons[] = {"ic_cad_galaxy_lasgun"};
+    respawnWeapons[] = {"ic_cad_galaxy_lasgun"};
+    // Give AI boolets
+    magazines[] = {mag_12(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    respawnMagazines[] = {mag_12(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
   };
 };
