@@ -35,6 +35,7 @@ class CfgGroups{
 	
 	class Indep {
 		class DK143_I_RenegadesBlack  {
+			name = "143rd Black Clad Renegades";
 		    class Infantry {
                 name = "Infantry";
                 class DK143_I_Ren_BL_CommandSquad {
