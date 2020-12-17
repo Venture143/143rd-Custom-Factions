@@ -6,7 +6,7 @@ class CfgPatches {
 		requiredAddons[] = 
         {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "IC_CAD_WEAPONS"};
     requiredVersion = 1.62;
-		units[] = {};
+		units[] = {"DK143_O_BthrAscMind_Flamer", "DK143_O_BthrAscMind_Grenadier", "DK143_O_BthrAscMind_Rocket", "DK143_O_BthrAscMind_Plasma", "DK143_O_BthrAscMind_Melta", "DK143_O_BthrAscMind_Stubber", "DK143_O_BthrAscMind_Rifleman"};
 		weapons[] = {};
 		worlds[] = {};
 	};
@@ -26,9 +26,552 @@ class CfgGroups {
   class EAST {
 		class DK143_Custom_Factions{
 			name = "143rd Custom Factions";
-        class DK143_O_BthrAscMind {
-          name = "Brotherhood of the Ascended Mind";
-        };
+        		class DK143_O_BthrAscMind {
+         		 name = "Brotherhood of the Ascended Mind";
+								class DK143_O_BthrAscMind_FireteamLight {
+					name = "Fireteam";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Stubber";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+				};
+				
+				class DK143_O_BthrAscMind_FireteamPlasma {
+					name = "Fireteam Plasma";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Plasma";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+				};
+				
+				class DK143_O_BthrAscMind_FireteamMelta {
+					name = "Fireteam Melta";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Melta";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+				};
+				
+				class DK143_O_BthrAscMind_FireteamRocket {
+					name = "Fireteam Rocket";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rocket";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+				};
+							
+				class DK143_O_BthrAscMind_FireteamFlamer {
+					name = "Fireteam Flamer";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Flamer";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+				};
+				
+				class DK143_O_BthrAscMind_FireteaGrenadier{
+					name = "Fireteam Flamer";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Grenadier";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+					 class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					 };
+				};
+				
+				class DK143_O_BthrAscMind_Squad {
+					name = "Squad (Stubber + GL)";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Grenadier";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Stubber";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+				};
+				
+				class DK143_O_BthrAscMind_SquadPlasma {
+					name = "Squad (Plasma)";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Plasma";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Plasma";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+				};
+				
+				class DK143_O_BthrAscMind_SquadMelta {
+					name = "Squad (Melta)";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Melta";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Melta";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+				};
+				
+				class DK143_O_BthrAscMind_SquadRocket {
+					name = "Squad (Rocket)";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rocket";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rocket";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+				};
+				
+				class DK143_O_BthrAscMind_SquadFlamer {
+					name = "Squad (Flamers)";
+					side = 0;
+					faction = "DK143_O_BthrAscMind";
+					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+					rarityGroup = 0.5;
+					
+					class Unit0 {
+						position[] = {0,0,0};
+						rank = "SERGEANT";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit1 {
+						position[] = {5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Flamer";
+					};
+					class Unit2 {
+						position[] = {-5,-5,0};
+						rank = "CORPORAL";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Flamer";
+					};
+					class Unit3 {
+						position[] = {10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit4 {
+						position[] = {-10,-10,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit5 {
+						position[] = {15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit6 {
+						position[] = {-15,-15,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit7 {
+						position[] = {20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit8 {
+						position[] = {-20,-20,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+					class Unit9 {
+						position[] = {25,-25,0};
+						rank = "PRIVATE";
+						side = 0;
+						vehicle = "DK143_O_BthrAscMind_Rifleman";
+					};
+				};
+			 
+     };
     };
   };
 };
@@ -140,13 +683,36 @@ class CfgVehicles
     scopeCurator = 2;
     displayName = "Rocketman";
     // Give AI gun
-    weapons[] = {"ic_cad_galaxy_lasgun"};
-    respawnWeapons[] = {"ic_cad_galaxy_lasgun"};
+    weapons[] = {"ic_cad_galaxy_lasgun","MissileLauncherDKOKBlack"};
+    respawnWeapons[] = {"ic_cad_galaxy_lasgun", "MissileLauncherDKOKBlack"};
     // Give AI boolets
     magazines[] = {mag_12(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
     respawnMagazines[] = {mag_12(ic_las_powerpack), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
     backpack = "DK143_BthrAscMind_RocketManBackpack";
   };
         
+  class DK143_O_BthrAscMind_Grenadier : DK143_Base_BthrAscMind {
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Grenadier";
+    // Give AI gun
+    weapons[] = {"TIOW_IG_GL"};
+    respawnWeapons[] = {"TIOW_IG_GL"};
+    // Give AI boolets
+    magazines[] = {mag_8(TIOW_IG_GL_Frag_mag), mag_4(TIOW_ig_krak_grenade_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    respawnMagazines[] = {mag_8(TIOW_IG_GL_Frag_mag), mag_4(TIOW_ig_krak_grenade_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+  };
+	
+  class DK143_O_BthrAscMind_Flamer : DK143_Base_BthrAscMind {
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Flamer";
+    // Give AI gun
+    weapons[] = {"TIOW_Krieg_Flamer"};
+    respawnWeapons[] = {"TIOW_Krieg_Flamer"};
+    // Give AI boolets
+    magazines[] = {mag_12(TIOW_Krieg_Flamer_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    respawnMagazines[] = {mag_12(TIOW_Krieg_Flamer_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+  };
 
 };
