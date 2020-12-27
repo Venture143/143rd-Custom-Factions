@@ -194,7 +194,7 @@ class CfgGroups {
 				};
 				
 				class DK143_O_BthrAscMind_FireteaGrenadier{
-					name = "Fireteam Flamer";
+					name = "Fireteam Grenadier";
 					side = 0;
 					faction = "DK143_O_BthrAscMind";
 					icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
@@ -647,11 +647,11 @@ class CfgVehicles
     scopeCurator = 2;
     displayName = "Stubberman";
     // Give AI gun
-    weapons[] = {"TIOW_BP_Heavy_Stubber"};
-    respawnWeapons[] = {"TIOW_BP_Heavy_Stubber"};
+    weapons[] = {"KriegHeavyStubberDK"};
+    respawnWeapons[] = {"KriegHeavyStubberDK"};
     // Give AI boolets
-    magazines[] = {mag_12(TIOW_150Rnd_Stubber_expander), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
-    respawnMagazines[] = {mag_12(TIOW_150Rnd_Stubber_expander), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    magazines[] = {mag_12(TIOW_50Rnd_Stubber_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+    respawnMagazines[] = {mag_12(TIOW_50Rnd_Stubber_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
   };
   
   class DK143_O_BthrAscMind_Melta : DK143_Base_BthrAscMind {
