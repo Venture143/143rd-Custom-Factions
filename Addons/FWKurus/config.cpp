@@ -6,7 +6,7 @@ class CfgPatches {
 		requiredAddons[] = 
         {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "OPTRE_Core",  "AM_weapons"};
         requiredVersion = 1.62;
-		units[] = {"DK143_O_FWKurus_Guardsmen"};
+		units[] = {"DK143_B_FWKurus_Guardsmen", "DK143_B_FWKurus_Sergeant", "DK143_B_FWKurus_Melta", "DK143_B_FWKurus_PlasmaCal", "DK143_B_FWKurus_ATRocket", "DK143_B_FWKurus_ATRifle", "DK143_B_FWKurus_Flamer", "DK143_B_FWKurus_Stubber", "DK143_G_FWKurus_Guardsmen", "DK143_G_FWKurus_Sergeant", "DK143_G_FWKurus_Melta", "DK143_G_FWKurus_PlasmaCal", "DK143_G_FWKurus_ATRocket", "DK143_G_FWKurus_ATRifle", "DK143_G_FWKurus_Flamer", "DK143_G_FWKurus_Stubber", "DK143_O_FWKurus_Guardsmen", "DK143_O_FWKurus_Sergeant", "DK143_O_FWKurus_Melta", "DK143_O_FWKurus_PlasmaCal", "DK143_O_FWKurus_ATRocket", "DK143_O_FWKurus_ATRifle", "DK143_O_FWKurus_Flamer", "DK143_O_FWKurus_Stubber"};
 		weapons[] = {};
 		worlds[] = {};
 	};
@@ -95,25 +95,41 @@ class CfgVehicles
 	// ARMA 3 Base Soldier Classes
 	class O_Soldier_base_F;
 
+    // Custom Backpacks
+    class Meow_Meow_Invisywisy_Invs;
+
+    class DK143_B_FWKurus_ATBackpack : Meow_Meow_Invisywisy_Invs
+    {
+        scope = 1;
+        scopeCurator = 2;
+
+        class TransportItems {
+                
+	    };
+	    class TransportMagazines {
+		    mag_xx(Vorona_HEAT, 5);
+	    };
+    }
         
-  // BAse Config Class
-  class DK143_Base_FWKurusGuardsmen : O_Soldier_base_F {
-    scope = 0;
-    scopeCurator = 0;
-    faction = "DK143_O_FWKurus";
-    displayName = "change this";
-    cost = 1;
-    side = 0;
-    identityTypes[] = {"Head_NATO","LanguageENGB"};
-    uniformClass = "OPTRE_UNSC_Dress_Uniform_gray";
-    backpack = "Meow_Meow_Invisywisy_Invs";
-    items[] = {mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_4(ACE_quikclot), mag_10(ACE_CableTie)};
-    respawnItems[] = {mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_4(ACE_quikclot), mag_10(ACE_CableTie)};
-    linkedItems[] = {"AM_armor","H_Beret_EAF_01_F","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "TIOW_Bionic_Eye", "Laserdesignator"};
-    respawnlinkedItems[] = {"AM_armor","H_Beret_EAF_01_F1","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "TIOW_Bionic_Eye", "Laserdesignator"};
-  };
+    // BAse Config Class
+    class DK143_Base_FWKurusGuardsmen : O_Soldier_base_F {
+        scope = 0;
+        scopeCurator = 0;
+        faction = "DK143_O_FWKurus";
+        displayName = "change this";
+        cost = 1;
+        side = 0;
+        identityTypes[] = {"Head_NATO","LanguageENGB"};
+        uniformClass = "OPTRE_UNSC_Dress_Uniform_gray";
+        backpack = "Meow_Meow_Invisywisy_Invs";
+        items[] = {mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_4(ACE_quikclot), mag_10(ACE_CableTie)};
+        respawnItems[] = {mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_4(ACE_quikclot), mag_10(ACE_CableTie)};
+        linkedItems[] = {"AM_armor","H_Beret_EAF_01_F","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "TIOW_Bionic_Eye", "Laserdesignator"};
+        respawnlinkedItems[] = {"AM_armor","H_Beret_EAF_01_F1","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "TIOW_Bionic_Eye", "Laserdesignator"};
+    };
   
-  //Actual Units
+    //Actual Units
+    // OPFOR
     class DK143_O_FWKurus_Guardsmen : DK143_Base_FWKurusGuardsmen {
         scope = 2;
         scopeCurator =2;
@@ -124,7 +140,116 @@ class CfgVehicles
         respawnWeapons[] = {"galvanic_rifle"};
 		// Give AI boolets
         magazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
-        respawnMagazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"];
+        respawnMagazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
     };
 
+    class DK143_O_FWKurus_Sergeant : DK143_Base_FWKurusGuardsmen {
+        scope = 2;
+        scopeCurator =2;
+        displayName = "Sergeant";
+
+        // Give AI gun
+		weapons[] = {"radium_carbine"};
+        respawnWeapons[] = {"radium_carbine"};
+		// Give AI boolets
+        magazines[] = {mag_5(radium_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(radium_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+    };
+
+    class DK143_O_FWKurus_Stubber : DK143_Base_FWKurusGuardsmen {
+        scope = 2;
+        scopeCurator =2;
+        displayName = "Stubber";
+
+        // Give AI gun
+		weapons[] = {"LMG_03_F"};
+        respawnWeapons[] = {"LMG_03_F"};
+		// Give AI boolets
+        magazines[] = {mag_5(200Rnd_556x45_Box_Tracer_Red_F), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(200Rnd_556x45_Box_Tracer_Red_F), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+    };
+
+    class DK143_O_FWKurus_PlasmaCal : DK143_Base_FWKurusGuardsmen {
+        scope = 2;
+        scopeCurator =2;
+        displayName = "Plasma Caliver";
+
+        // Give AI gun
+		weapons[] = {"plasma_caliver"};
+        respawnWeapons[] = {"plasma_caliver"};
+		// Give AI boolets
+        magazines[] = {mag_5(plasma_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(plasma_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+    };
+
+    class DK143_O_FWKurus_Melta : DK143_Base_FWKurusGuardsmen {
+        scope = 2;
+        scopeCurator =2;
+        displayName = "Melta";
+
+        // Give AI gun
+		weapons[] = {"TIOW_MeltaGun_01"};
+        respawnWeapons[] = {"TIOW_MeltaGun_01"};
+		// Give AI boolets
+        magazines[] = {mag_5(TIOW_Meltagun_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(TIOW_Meltagun_Mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+    };
+
+    class DK143_O_FWKurus_Flamer : DK143_Base_FWKurusGuardsmen {
+        scope = 2;
+        scopeCurator =2;
+        displayName = "Flamer";
+
+        // Give AI gun
+		weapons[] = {"TIOW_IG_Flamer"};
+        respawnWeapons[] = {"TIOW_IG_Flamer"};
+		// Give AI boolets
+        magazines[] = {mag_5(TIOW_Krieg_Flamer_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(TIOW_Krieg_Flamer_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+    };
+
+    class DK143_O_FWKurus_ATRifle : DK143_Base_FWKurusGuardsmen {
+        scope = 2;
+        scopeCurator =2;
+        displayName = "Arquebus";
+
+        // Give AI gun
+		weapons[] = {"transuranic_arquebus"};
+        respawnWeapons[] = {"transuranic_arquebus"};
+		// Give AI boolets
+        magazines[] = {mag_5(transuranic_HE_mag), mag_5(transuranic_AP_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(transuranic_HE_mag), mag_5(transuranic_AP_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+    };
+
+     class DK143_O_FWKurus_ATRocket : DK143_Base_FWKurusGuardsmen {
+        scope = 2;
+        scopeCurator =2;
+        displayName = "Rocketman";
+
+        // Give AI gun
+		weapons[] = {"galvanic_rifle", "launch_O_Vorona_brown_F"};
+        respawnWeapons[] = {"galvanic_rifle", "launch_O_Vorona_brown_F"};
+		// Give AI boolets
+        magazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+    };
+
+    //Blufor
+    class DK143_B_FWKurus_Guardsmen : DK143_O_FWKurus_Guardsmen {side = 1;};
+    class DK143_B_FWKurus_Sergeant : DK143_O_FWKurus_Sergeant {side = 1;};
+    class DK143_B_FWKurus_Melta : DK143_O_FWKurus_Melta {side = 1;};
+    class DK143_B_FWKurus_PlasmaCal : DK143_O_FWKurus_PlasmaCal {side = 1;};
+    class DK143_B_FWKurus_ATRocket : DK143_O_FWKurus_ATRocket {side = 1;};
+    class DK143_B_FWKurus_ATRifle : DK143_O_FWKurus_ATRifle {side = 1;};
+    class DK143_B_FWKurus_Flamer : DK143_O_FWKurus_Flamer {side = 1;};
+    class DK143_B_FWKurus_Stubber : DK143_O_FWKurus_Stubber {side = 1;};
+    //Indepfor
+    class DK143_G_FWKurus_Guardsmen : DK143_O_FWKurus_Guardsmen {side = 2;};
+    class DK143_G_FWKurus_Sergeant : DK143_O_FWKurus_Sergeant {side = 2;};
+    class DK143_G_FWKurus_Melta : DK143_O_FWKurus_Melta {side = 2;};
+    class DK143_G_FWKurus_PlasmaCal : DK143_O_FWKurus_PlasmaCal {side = 2;};
+    class DK143_G_FWKurus_ATRocket : DK143_O_FWKurus_ATRocket {side = 2;};
+    class DK143_G_FWKurus_ATRifle : DK143_O_FWKurus_ATRifle {side = 2;};
+    class DK143_G_FWKurus_Flamer : DK143_O_FWKurus_Flamer {side = 2;};
+    class DK143_G_FWKurus_Stubber : DK143_O_FWKurus_Stubber {side = 2;};
 };
