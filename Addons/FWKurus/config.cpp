@@ -44,7 +44,479 @@ class CfgGroups {
 			name = "143rd Custom Factions";
             class DK143_O_FWKurus {
                 name = "Forge World Kurus";
+                class DK143_O_FWKurus_FireteamStubber{
+                    name = "Fireteam Stubber";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Stubber";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
 
+                class DK143_O_FWKurus_FireteamPlasma{
+                    name = "Fireteam Plasma";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_PlasmaCal";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_O_FWKurus_Flamer{
+                    name = "Fireteam Flamer";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Flamer";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_O_FWKurus_Melta{
+                    name = "Fireteam Melta";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Melta";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_O_FWKurus_ATRifle{
+                    name = "Fireteam Arquebus";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_ATRifle";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_O_FWKurus_ATRocket{
+                    name = "Fireteam AT Rocket";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_ATRocket";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_O_FWKurus_Squad {
+                    name = "Squad (Stubber + AT Rocket)";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_ATRocket";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Stubber";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_O_FWKurus_SquadATRifle {
+                    name = "Squad (Stubber + Arquebus)";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_ATRifle";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Stubber";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_O_FWKurus_SquadFlamer {
+                    name = "Squad (Melta + Flamer)";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Flamer";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Melta";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_O_FWKurus_SquadPlasma {
+                    name = "Squad (Plasma + Stubber)";
+                    side = 0;
+                    faction = "DK143_O_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Stubber";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_PlasmaCal";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_O_FWKurus_Guardsmen";
+                    };
+                };
             };
         };
     };
@@ -54,7 +526,479 @@ class CfgGroups {
         name = "143rd Custom Factions";
             class DK143_B_FWKurus {
                 name = "Forge World Kurus";
+                class DK143_B_FWKurus_FireteamStubber{
+                    name = "Fireteam Stubber";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Stubber";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
 
+                class DK143_B_FWKurus_FireteamPlasma{
+                    name = "Fireteam Plasma";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_PlasmaCal";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_B_FWKurus_Flamer{
+                    name = "Fireteam Flamer";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Flamer";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_B_FWKurus_Melta{
+                    name = "Fireteam Melta";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Melta";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_B_FWKurus_ATRifle{
+                    name = "Fireteam Arquebus";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_ATRifle";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_B_FWKurus_ATRocket{
+                    name = "Fireteam AT Rocket";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_ATRocket";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_B_FWKurus_Squad {
+                    name = "Squad (Stubber + AT Rocket)";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_ATRocket";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Stubber";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_B_FWKurus_SquadATRifle {
+                    name = "Squad (Stubber + Arquebus)";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_ATRifle";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Stubber";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_B_FWKurus_SquadFlamer {
+                    name = "Squad (Melta + Flamer)";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Flamer";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Melta";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
+
+                class DK143_B_FWKurus_SquadPlasma {
+                    name = "Squad (Plasma + Stubber)";
+                    side = 0;
+                    faction = "DK143_B_FWKurus";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                                    
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Sergeant";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Stubber";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_PlasmaCal";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "DK143_B_FWKurus_Guardsmen";
+                    };
+                };
             };
         };
     };
@@ -64,7 +1008,479 @@ class CfgGroups {
         name = "143rd Custom Factions";
           class DK143_G_FWKurus {
             name = "Forge World Kurus";
+            class DK143_I_FWKurus_FireteamStubber{
+                name = "Fireteam Stubber";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Stubber";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
 
+            class DK143_I_FWKurus_FireteamPlasma{
+                name = "Fireteam Plasma";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_PlasmaCal";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
+
+            class DK143_I_FWKurus_Flamer{
+                name = "Fireteam Flamer";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Flamer";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
+
+            class DK143_I_FWKurus_Melta{
+                name = "Fireteam Melta";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Melta";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
+
+            class DK143_I_FWKurus_ATRifle{
+                name = "Fireteam Arquebus";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_ATRifle";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
+
+            class DK143_I_FWKurus_ATRocket{
+                name = "Fireteam AT Rocket";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_ATRocket";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
+
+            class DK143_I_FWKurus_Squad {
+                name = "Squad (Stubber + AT Rocket)";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_ATRocket";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Stubber";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit4 {
+                    position[] = {-10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit5 {
+                    position[] = {15,-15,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit6 {
+                    position[] = {-15,-15,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit7 {
+                    position[] = {20,-20,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit8 {
+                    position[] = {-20,-20,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit9 {
+                    position[] = {25,-25,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
+
+            class DK143_I_FWKurus_SquadATRifle {
+                name = "Squad (Stubber + Arquebus)";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_ATRifle";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Stubber";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit4 {
+                    position[] = {-10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit5 {
+                    position[] = {15,-15,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit6 {
+                    position[] = {-15,-15,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit7 {
+                    position[] = {20,-20,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit8 {
+                    position[] = {-20,-20,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit9 {
+                    position[] = {25,-25,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
+
+            class DK143_I_FWKurus_SquadFlamer {
+                name = "Squad (Melta + Flamer)";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Flamer";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Melta";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit4 {
+                    position[] = {-10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit5 {
+                    position[] = {15,-15,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit6 {
+                    position[] = {-15,-15,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit7 {
+                    position[] = {20,-20,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit8 {
+                    position[] = {-20,-20,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit9 {
+                    position[] = {25,-25,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
+
+            class DK143_I_FWKurus_SquadPlasma {
+                name = "Squad (Plasma + Stubber)";
+                side = 0;
+                faction = "DK143_I_FWKurus";
+                icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                rarityGroup = 0.5;
+                                
+                class Unit0 {
+                    position[] = {0,0,0};
+                    rank = "SERGEANT";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Sergeant";
+                };
+                class Unit1 {
+                    position[] = {5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Stubber";
+                };
+                class Unit2 {
+                    position[] = {-5,-5,0};
+                    rank = "CORPORAL";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_PlasmaCal";
+                };
+                class Unit3 {
+                    position[] = {10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit4 {
+                    position[] = {-10,-10,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit5 {
+                    position[] = {15,-15,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit6 {
+                    position[] = {-15,-15,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit7 {
+                    position[] = {20,-20,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit8 {
+                    position[] = {-20,-20,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+                class Unit9 {
+                    position[] = {25,-25,0};
+                    rank = "PRIVATE";
+                    side = 0;
+                    vehicle = "DK143_I_FWKurus_Guardsmen";
+                };
+            };
             };
         };
     };
