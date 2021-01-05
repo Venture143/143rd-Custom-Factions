@@ -42,17 +42,21 @@ class CfgGroups {
   class EAST {
 		class DK143_Custom_Factions{
 			name = "143rd Custom Factions";
-        class DK143_O_FWKurus {
-          name = "Forge World Kurus";
+            class DK143_O_FWKurus {
+                name = "Forge World Kurus";
+
+            };
         };
     };
-    
+
     class WEST {
       class DK143_Custom_Factions{
         name = "143rd Custom Factions";
-          class DK143_B_FWKurus {
-            name = "Forge World Kurus";
-          };
+            class DK143_B_FWKurus {
+                name = "Forge World Kurus";
+
+            };
+        };
     };
     
     class Indep {
@@ -60,8 +64,10 @@ class CfgGroups {
         name = "143rd Custom Factions";
           class DK143_G_FWKurus {
             name = "Forge World Kurus";
-          };
-     };
+
+            };
+        };
+    };
 };
 
 class CfgVehicles
@@ -108,7 +114,7 @@ class CfgVehicles
   };
   
   //Actual Units
-    class DK143_O_FWKurus_Guardsmen : DK143_Base_FWKurusGuardsmen{
+    class DK143_O_FWKurus_Guardsmen : DK143_Base_FWKurusGuardsmen {
         scope = 2;
         scopeCurator =2;
         displayName = "Guardsmen";
@@ -118,7 +124,7 @@ class CfgVehicles
         respawnWeapons[] = {"galvanic_rifle"};
 		// Give AI boolets
         magazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
-        respawnMagazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"];
     };
 
 };
