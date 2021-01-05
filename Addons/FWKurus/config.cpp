@@ -6,7 +6,11 @@ class CfgPatches {
 		requiredAddons[] = 
         {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "IC_CAD_WEAPONS"};
     requiredVersion = 1.62;
+<<<<<<< HEAD
 		units[] = {"DK143_O_FWKurus_Guardsmen"};
+=======
+		units[] = {"DK143_O_BthrAscMind_Flamer", "DK143_O_BthrAscMind_Grenadier", "DK143_O_BthrAscMind_Rocket", "DK143_O_BthrAscMind_Plasma", "DK143_O_BthrAscMind_Melta", "DK143_O_BthrAscMind_Stubber", "DK143_O_BthrAscMind_Rifleman"};
+>>>>>>> main
 		weapons[] = {};
 		worlds[] = {};
 	};
@@ -109,6 +113,7 @@ class CfgVehicles
   };
   
   //Actual Units
+<<<<<<< HEAD
     class DK143_O_FWKurus_Guardsmen : DK143_Base_FWKurusGuardsmen{
         scope = 2;
         scopeCurator =2;
@@ -121,4 +126,7 @@ class CfgVehicles
         magazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
         respawnMagazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
     };
+=======
+
+>>>>>>> main
 };
