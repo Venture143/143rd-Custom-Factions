@@ -29,7 +29,7 @@ class CfgFactionClasses {
 		priority = 0;
   };
   
-   class DK143_G_FWKurus {
+   class DK143_I_FWKurus {
     displayName = "Forgeworld Kurus";
 		side = 2;
 		flag = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";
@@ -1006,7 +1006,7 @@ class CfgGroups {
     class Indep {
       class DK143_Custom_Factions{
         name = "143rd Custom Factions";
-          class DK143_G_FWKurus {
+          class DK143_I_FWKurus {
             name = "Forge World Kurus";
             class DK143_I_FWKurus_FireteamStubber{
                 name = "Fireteam Stubber";
@@ -1660,12 +1660,12 @@ class CfgVehicles
     class DK143_B_FWKurus_Flamer : DK143_O_FWKurus_Flamer {side = 1;};
     class DK143_B_FWKurus_Stubber : DK143_O_FWKurus_Stubber {side = 1;};
     //Indepfor
-    class DK143_G_FWKurus_Guardsmen : DK143_O_FWKurus_Guardsmen {side = 2;};
-    class DK143_G_FWKurus_Sergeant : DK143_O_FWKurus_Sergeant {side = 2;};
-    class DK143_G_FWKurus_Melta : DK143_O_FWKurus_Melta {side = 2;};
-    class DK143_G_FWKurus_PlasmaCal : DK143_O_FWKurus_PlasmaCal {side = 2;};
-    class DK143_G_FWKurus_ATRocket : DK143_O_FWKurus_ATRocket {side = 2;};
-    class DK143_G_FWKurus_ATRifle : DK143_O_FWKurus_ATRifle {side = 2;};
-    class DK143_G_FWKurus_Flamer : DK143_O_FWKurus_Flamer {side = 2;};
-    class DK143_G_FWKurus_Stubber : DK143_O_FWKurus_Stubber {side = 2;};
+    class DK143_I_FWKurus_Guardsmen : DK143_O_FWKurus_Guardsmen {side = 2;};
+    class DK143_I_FWKurus_Sergeant : DK143_O_FWKurus_Sergeant {side = 2;};
+    class DK143_I_FWKurus_Melta : DK143_O_FWKurus_Melta {side = 2;};
+    class DK143_I_FWKurus_PlasmaCal : DK143_O_FWKurus_PlasmaCal {side = 2;};
+    class DK143_I_FWKurus_ATRocket : DK143_O_FWKurus_ATRocket {side = 2;};
+    class DK143_I_FWKurus_ATRifle : DK143_O_FWKurus_ATRifle {side = 2;};
+    class DK143_I_FWKurus_Flamer : DK143_O_FWKurus_Flamer {side = 2;};
+    class DK143_I_FWKurus_Stubber : DK143_O_FWKurus_Stubber {side = 2;};
 };
