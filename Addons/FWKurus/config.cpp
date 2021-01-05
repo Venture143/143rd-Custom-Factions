@@ -6,7 +6,7 @@ class CfgPatches {
 		requiredAddons[] = 
         {"ace_common", "DkoKFoot","CadFoot","OrkBoyz","TIOWSpaceMarines", "OPTRE_Core",  "AM_weapons"};
         requiredVersion = 1.62;
-		units[] = {"DK143_B_FWKurus_Guardsmen", "DK143_B_FWKurus_Sergeant", "DK143_B_FWKurus_Melta", "DK143_B_FWKurus_PlasmaCal", "DK143_B_FWKurus_ATRocket", "DK143_B_FWKurus_ATRifle", "DK143_B_FWKurus_Flamer", "DK143_B_FWKurus_Stubber", "DK143_G_FWKurus_Guardsmen", "DK143_G_FWKurus_Sergeant", "DK143_G_FWKurus_Melta", "DK143_G_FWKurus_PlasmaCal", "DK143_G_FWKurus_ATRocket", "DK143_G_FWKurus_ATRifle", "DK143_G_FWKurus_Flamer", "DK143_G_FWKurus_Stubber", "DK143_O_FWKurus_Guardsmen", "DK143_O_FWKurus_Sergeant", "DK143_O_FWKurus_Melta", "DK143_O_FWKurus_PlasmaCal", "DK143_O_FWKurus_ATRocket", "DK143_O_FWKurus_ATRifle", "DK143_O_FWKurus_Flamer", "DK143_O_FWKurus_Stubber"};
+		units[] = {"DK143_B_FWKurus_Guardsmen", "DK143_B_FWKurus_Sergeant", "DK143_B_FWKurus_Melta", "DK143_B_FWKurus_PlasmaCal", "DK143_B_FWKurus_ATRocket", "DK143_B_FWKurus_ATRifle", "DK143_B_FWKurus_Flamer", "DK143_B_FWKurus_Stubber", "DK143_I_FWKurus_Guardsmen", "DK143_I_FWKurus_Sergeant", "DK143_I_FWKurus_Melta", "DK143_I_FWKurus_PlasmaCal", "DK143_I_FWKurus_ATRocket", "DK143_I_FWKurus_ATRifle", "DK143_I_FWKurus_Flamer", "DK143_I_FWKurus_Stubber", "DK143_O_FWKurus_Guardsmen", "DK143_O_FWKurus_Sergeant", "DK143_O_FWKurus_Melta", "DK143_O_FWKurus_PlasmaCal", "DK143_O_FWKurus_ATRocket", "DK143_O_FWKurus_ATRifle", "DK143_O_FWKurus_Flamer", "DK143_O_FWKurus_Stubber"};
 		weapons[] = {};
 		worlds[] = {};
 	};
