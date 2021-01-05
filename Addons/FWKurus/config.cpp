@@ -1651,21 +1651,21 @@ class CfgVehicles
     };
 
     //Blufor
-    class DK143_B_FWKurus_Guardsmen : DK143_O_FWKurus_Guardsmen {side = 1;};
-    class DK143_B_FWKurus_Sergeant : DK143_O_FWKurus_Sergeant {side = 1;};
-    class DK143_B_FWKurus_Melta : DK143_O_FWKurus_Melta {side = 1;};
-    class DK143_B_FWKurus_PlasmaCal : DK143_O_FWKurus_PlasmaCal {side = 1;};
-    class DK143_B_FWKurus_ATRocket : DK143_O_FWKurus_ATRocket {side = 1;};
-    class DK143_B_FWKurus_ATRifle : DK143_O_FWKurus_ATRifle {side = 1;};
-    class DK143_B_FWKurus_Flamer : DK143_O_FWKurus_Flamer {side = 1;};
-    class DK143_B_FWKurus_Stubber : DK143_O_FWKurus_Stubber {side = 1;};
+    class DK143_B_FWKurus_Guardsmen : DK143_O_FWKurus_Guardsmen {side = 1; faction = "DK143_B_FWKurus";};
+    class DK143_B_FWKurus_Sergeant : DK143_O_FWKurus_Sergeant {side = 1; faction = "DK143_B_FWKurus";};
+    class DK143_B_FWKurus_Melta : DK143_O_FWKurus_Melta {side = 1; faction = "DK143_B_FWKurus";};
+    class DK143_B_FWKurus_PlasmaCal : DK143_O_FWKurus_PlasmaCal {side = 1; faction = "DK143_B_FWKurus";};
+    class DK143_B_FWKurus_ATRocket : DK143_O_FWKurus_ATRocket {side = 1; faction = "DK143_B_FWKurus";};
+    class DK143_B_FWKurus_ATRifle : DK143_O_FWKurus_ATRifle {side = 1; faction = "DK143_B_FWKurus";};
+    class DK143_B_FWKurus_Flamer : DK143_O_FWKurus_Flamer {side = 1; faction = "DK143_B_FWKurus";};
+    class DK143_B_FWKurus_Stubber : DK143_O_FWKurus_Stubber {side = 1; faction = "DK143_B_FWKurus";};
     //Indepfor
-    class DK143_I_FWKurus_Guardsmen : DK143_O_FWKurus_Guardsmen {side = 2;};
-    class DK143_I_FWKurus_Sergeant : DK143_O_FWKurus_Sergeant {side = 2;};
-    class DK143_I_FWKurus_Melta : DK143_O_FWKurus_Melta {side = 2;};
-    class DK143_I_FWKurus_PlasmaCal : DK143_O_FWKurus_PlasmaCal {side = 2;};
-    class DK143_I_FWKurus_ATRocket : DK143_O_FWKurus_ATRocket {side = 2;};
-    class DK143_I_FWKurus_ATRifle : DK143_O_FWKurus_ATRifle {side = 2;};
-    class DK143_I_FWKurus_Flamer : DK143_O_FWKurus_Flamer {side = 2;};
-    class DK143_I_FWKurus_Stubber : DK143_O_FWKurus_Stubber {side = 2;};
+    class DK143_I_FWKurus_Guardsmen : DK143_O_FWKurus_Guardsmen {side = 2; faction = "DK143_I_FWKurus";};
+    class DK143_I_FWKurus_Sergeant : DK143_O_FWKurus_Sergeant {side = 2; faction = "DK143_I_FWKurus";};
+    class DK143_I_FWKurus_Melta : DK143_O_FWKurus_Melta {side = 2; faction = "DK143_I_FWKurus";};
+    class DK143_I_FWKurus_PlasmaCal : DK143_O_FWKurus_PlasmaCal {side = 2; faction = "DK143_I_FWKurus";};
+    class DK143_I_FWKurus_ATRocket : DK143_O_FWKurus_ATRocket {side = 2; faction = "DK143_I_FWKurus";};
+    class DK143_I_FWKurus_ATRifle : DK143_O_FWKurus_ATRifle {side = 2; faction = "DK143_I_FWKurus";};
+    class DK143_I_FWKurus_Flamer : DK143_O_FWKurus_Flamer {side = 2; faction = "DK143_I_FWKurus";};
+    class DK143_I_FWKurus_Stubber : DK143_O_FWKurus_Stubber {side = 2; faction = "DK143_I_FWKurus";};
 };
