@@ -1641,6 +1641,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator =2;
         displayName = "Rocketman";
+        backpack = "DK143_B_FWKurus_ATBackpack";
 
         // Give AI gun
 		weapons[] = {"arifle_MSBS65_black_F", "launch_O_Vorona_brown_F"};
