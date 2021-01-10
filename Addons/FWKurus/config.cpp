@@ -1517,7 +1517,7 @@ class CfgVehicles
     class DK143_B_FWKurus_ATBackpack : Meow_Meow_Invisywisy_Invs
     {
         scope = 1;
-        scopeCurator = 2;
+        scopeCurator = 1;
 
         class TransportItems {
                 
@@ -1526,6 +1526,47 @@ class CfgVehicles
 		    mag_xx(Vorona_HEAT, 5);
 	    };
     }
+
+    class DK143_B_FWKurus_SLBackpack : Meow_Meow_Invisywisy_Invs
+    {
+        scope = 1;
+        scopeCurator = 1;
+
+        class TransportItems {
+                
+	    };
+	    class TransportMagazines {
+		    mag_xx(30Rnd_65x39_caseless_msbs_mag_Tracer, 5);
+            mag_xx(1Rnd_HE_Grenade_shell, 5);
+	    };
+    }
+
+    class DK143_B_FWKurus_Backpack : Meow_Meow_Invisywisy_Invs
+    {
+        scope = 1;
+        scopeCurator = 1;
+
+        class TransportItems {
+                
+	    };
+	    class TransportMagazines {
+		    mag_xx(30Rnd_65x39_caseless_msbs_mag_Tracer, 5);
+	    };
+    }
+
+    class DK143_B_FWKurus_StubberBackpack : Meow_Meow_Invisywisy_Invs
+    {
+        scope = 1;
+        scopeCurator = 1;
+
+        class TransportItems {
+                
+	    };
+	    class TransportMagazines {
+		    mag_xx(200Rnd_556x45_Box_Tracer_Red_F, 5);
+	    };
+    }
+    
         
     // BAse Config Class
     class DK143_Base_FWKurusGuardsmen : O_Soldier_base_F {
@@ -1537,7 +1578,7 @@ class CfgVehicles
         side = 0;
         identityTypes[] = {"Head_NATO","LanguageENGB"};
         uniformClass = "OPTRE_UNSC_Dress_Uniform_gray";
-        backpack = "Meow_Meow_Invisywisy_Invs";
+        backpack = "DK143_B_FWKurus_Backpack";
         items[] = {mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_4(ACE_quikclot), mag_10(ACE_CableTie)};
         respawnItems[] = {mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_12(ACE_quikclot), mag_4(ACE_quikclot), mag_10(ACE_CableTie)};
         linkedItems[] = {"AM_armor","H_Beret_EAF_01_F","ItemMap","ItemRadio","ItemCompass","ItemWatch", "TIOW_F_Gloves_Black", "TIOW_Bionic_Eye", "Laserdesignator"};
@@ -1563,7 +1604,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator =2;
         displayName = "Sergeant";
-
+        backpack = "DK143_B_FWKurus_SLBackpack";
         // Give AI gun
 		weapons[] = {"arifle_MSBS65_GL_black_F"};
         respawnWeapons[] = {"arifle_MSBS65_GL_black_F"};
@@ -1576,7 +1617,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator =2;
         displayName = "Stubber";
-
+        backpack = "DK143_B_FWKurus_StubberBackpack"
         // Give AI gun
 		weapons[] = {"LMG_03_F"};
         respawnWeapons[] = {"LMG_03_F"};
