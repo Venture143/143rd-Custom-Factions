@@ -1568,8 +1568,8 @@ class CfgVehicles
 		weapons[] = {"arifle_MSBS65_GL_black_F"};
         respawnWeapons[] = {"arifle_MSBS65_GL_black_F"};
 		// Give AI boolets
-        magazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag", Mag_3(1Rnd_HE_Grenade_shell)};
-        respawnMagazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag", Mag_3(1Rnd_HE_Grenade_shell)};
+        magazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag", mag_3(1Rnd_HE_Grenade_shell)};
+        respawnMagazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag", mag_3(1Rnd_HE_Grenade_shell)};
     };
 
     class DK143_O_FWKurus_Stubber : DK143_Base_FWKurusGuardsmen {
