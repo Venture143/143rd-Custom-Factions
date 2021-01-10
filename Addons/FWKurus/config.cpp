@@ -1643,11 +1643,11 @@ class CfgVehicles
         displayName = "Rocketman";
 
         // Give AI gun
-		weapons[] = {"galvanic_rifle", "launch_O_Vorona_brown_F"};
-        respawnWeapons[] = {"galvanic_rifle", "launch_O_Vorona_brown_F"};
+		weapons[] = {"arifle_MSBS65_black_F", "launch_O_Vorona_brown_F"};
+        respawnWeapons[] = {"arifle_MSBS65_black_F", "launch_O_Vorona_brown_F"};
 		// Give AI boolets
-        magazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
-        respawnMagazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        magazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
     };
 
 
