@@ -1552,11 +1552,11 @@ class CfgVehicles
         displayName = "Guardsmen";
 
         // Give AI gun
-		weapons[] = {"galvanic_rifle"};
-        respawnWeapons[] = {"galvanic_rifle"};
+		weapons[] = {"arifle_MSBS65_black_F"};
+        respawnWeapons[] = {"arifle_MSBS65_black_F"};
 		// Give AI boolets
-        magazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
-        respawnMagazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        magazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
+        respawnMagazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine)};
     };
 
     class DK143_O_FWKurus_Sergeant : DK143_Base_FWKurusGuardsmen {
@@ -1565,11 +1565,11 @@ class CfgVehicles
         displayName = "Sergeant";
 
         // Give AI gun
-		weapons[] = {"radium_carbine"};
-        respawnWeapons[] = {"radium_carbine"};
+		weapons[] = {"arifle_MSBS65_GL_black_F"};
+        respawnWeapons[] = {"arifle_MSBS65_GL_black_F"};
 		// Give AI boolets
-        magazines[] = {mag_5(radium_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
-        respawnMagazines[] = {mag_5(radium_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        magazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag", Mag_3(1Rnd_HE_Grenade_shell)};
+        respawnMagazines[] = {mag_5(30Rnd_65x39_caseless_msbs_mag_Tracer), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag", Mag_3(1Rnd_HE_Grenade_shell)};
     };
 
     class DK143_O_FWKurus_Stubber : DK143_Base_FWKurusGuardsmen {
@@ -1637,7 +1637,7 @@ class CfgVehicles
         respawnMagazines[] = {mag_5(transuranic_HE_mag), mag_5(transuranic_AP_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
     };
 
-     class DK143_O_FWKurus_ATRocket : DK143_Base_FWKurusGuardsmen {
+    class DK143_O_FWKurus_ATRocket : DK143_Base_FWKurusGuardsmen {
         scope = 2;
         scopeCurator =2;
         displayName = "Rocketman";
@@ -1649,6 +1649,7 @@ class CfgVehicles
         magazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
         respawnMagazines[] = {mag_5(galvanic_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
     };
+
 
     //Blufor
     class DK143_B_FWKurus_Guardsmen : DK143_O_FWKurus_Guardsmen {side = 1; faction = "DK143_B_FWKurus";};
