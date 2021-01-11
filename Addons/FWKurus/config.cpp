@@ -1566,6 +1566,19 @@ class CfgVehicles
 		    mag_xx(200Rnd_556x45_Box_Tracer_Red_F, 5);
 	    };
     }
+
+    class DK143_B_FWKurus_plasmaBackpack : Meow_Meow_Invisywisy_Invs
+    {
+        scope = 1;
+        scopeCurator = 1;
+
+        class TransportItems {
+                
+	    };
+	    class TransportMagazines {
+		    mag_xx(DK_Overcharge_PlasmaGun_Flask, 10);
+	    };
+    }
     
         
     // BAse Config Class
@@ -1629,14 +1642,14 @@ class CfgVehicles
     class DK143_O_FWKurus_PlasmaCal : DK143_Base_FWKurusGuardsmen {
         scope = 2;
         scopeCurator =2;
-        displayName = "Plasma Caliver";
-
+        displayName = "Plasma";
+        backpack = "DK143_B_FWKurus_plasmaBackpack";
         // Give AI gun
-		weapons[] = {"plasma_caliver"};
-        respawnWeapons[] = {"plasma_caliver"};
+		weapons[] = {"TIOW_IG_Plasmagun_01"};
+        respawnWeapons[] = {"TIOW_IG_Plasmagun_01"};
 		// Give AI boolets
-        magazines[] = {mag_5(plasma_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
-        respawnMagazines[] = {mag_5(plasma_mag), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        magazines[] = {mag_5(DK_Overcharge_PlasmaGun_Flask), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
+        respawnMagazines[] = {mag_5(DK_Overcharge_PlasmaGun_Flask), mag_2(TIOW_ig_frag_grenade_mag), mag_2(ML700_krak_grenade_magazine), "TIOW_ig_smoke_grenade_mag"};
     };
 
     class DK143_O_FWKurus_Melta : DK143_Base_FWKurusGuardsmen {
