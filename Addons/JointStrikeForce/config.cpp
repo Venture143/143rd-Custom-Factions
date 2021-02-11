@@ -319,6 +319,7 @@ class CfgVehicles {
   class B_T_VTOL_01_infantry_F;
   class B_Plane_CAS_01_dynamicLoadout_F;
   class USAF_MQ9;
+  class B_Heli_Attack_01_dynamicLoadout_F;
   
   // units
   
