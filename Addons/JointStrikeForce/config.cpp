@@ -362,7 +362,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
     };
   
-  class B_JointStrikeForce_Rifleman_01 : B_JointStrikeForce_Squad_Leader_01 {
+  class B_JointStrikeForce_Rifleman_01 : B_Soldier_SL_F {
         author = "WM. Loli";
         scope = 2;
         scopeCurator = 2;
@@ -405,7 +405,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Medic";
         side = 1;
-        faction = "B_UnitedStates";
+        faction = "B_JointStrikeForce";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
