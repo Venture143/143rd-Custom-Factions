@@ -62,7 +62,7 @@ class CfgGroups {
                         vehicle = "B_JointStrikeForce_Rifleman_01";
                     };
                     class Unit2 {
-                        osition[] = {-5,-5,0};
+                        position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 1;
                         vehicle = "B_JointStrikeForce_Rifleman_01";

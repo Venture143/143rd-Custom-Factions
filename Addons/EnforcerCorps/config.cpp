@@ -370,6 +370,30 @@ class CfgVehicles {
 
     backpack = "LOP_B_KB_Med_tub";
    };
+
+   class I_Enforcer_Corps_Grenadier_01 :  I_Enforcer_Corps_Rifleman_01 {
+        author = "WM. Loli";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Grenadier";
+        side = 2;
+        faction = "I_EnforcerCorps";
+
+        identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+
+        uniformClass = "U_O_CombatUniform_oucamo";
+
+        linkedItems[] = {"V_EOD_blue_F","H_PASGT_basic_blue_F","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"};
+        respawnlinkedItems[] = {"V_EOD_blue_F","H_PASGT_basic_blue_F","ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"};
+
+        weapons[] = {"rhs_weap_vhsd2_bg_ct15x"};
+        respawnWeapons[] = {"rhs_weap_vhsd2_bg_ct15x"};
+
+        magazines[] = {"rhssaf_30rnd_556x45_Tracers_G36","rhssaf_30rnd_556x45_Tracers_G36"};
+        respawnMagazines[] = {"rhssaf_30rnd_556x45_Tracers_G36","rhssaf_30rnd_556x45_Tracers_G36"};
+
+        backpack = "B_LegStrapBag_black_F";
+   };
    
    // vehicles
    
