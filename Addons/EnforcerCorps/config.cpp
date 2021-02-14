@@ -225,7 +225,8 @@ class CfgVehicles {
     backpack = "LOP_B_KB_Med_tub";
    };
    
-   \\vehicles
+   \\ vehicles
+   
    class I_Enforcer_Corps_AMZ_26_Badger_IFV_01 : B_APC_Wheeled_01_cannon_F {
       scope = 2;
       scopeCurator = 2;
