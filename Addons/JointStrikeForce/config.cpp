@@ -343,6 +343,21 @@ class CfgVehicles {
         respawnMagazines[] = {"rhs_mag_30Rnd_556x45_Mk262_Stanag","rhsusf_mag_15Rnd_9x19_FMJ","rhs_mag_30Rnd_556x45_Mk262_Stanag","rhsusf_mag_15Rnd_9x19_FMJ"};
 
         backpack = "TFAR_rt1523g_black";
+
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m4a1_blockII_KAC_bk","rhsusf_acc_nt4_black","rhsusf_acc_anpeq15_bk","rhsusf_acc_g33_xps3",{"rhs_mag_30Rnd_556x45_Mk262_Stanag",30},{},"rhsusf_acc_grip3"},{},{"rhsusf_weap_m9","","","",{"rhsusf_mag_15Rnd_9x19_FMJ",15},{},""},{"rhs_uniform_cu_ocp",{{"ACE_elasticBandage",13},{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",5},{"ACE_morphine",5},{"ACE_epinephrine",5}}},{"V_PlateCarrierSpec_blk",{{"ACE_elasticBandage",18},{"HandGrenade",3,1},{"SmokeShell",10,1},{"ACE_CTS9",3,1}}},{"TFAR_rt1523g_black",{{"rhs_mag_30Rnd_556x45_Mk262_Stanag",8,30},{"rhsusf_mag_15Rnd_9x19_FMJ",4,15}}},"rhsusf_hgu56p_visor_black","",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGogglesB_blk_F"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
     };
   
   class B_JointStrikeForce_Rifleman_01 : B_JointStrikeForce_Squad_Leader_01 {
@@ -365,6 +380,21 @@ class CfgVehicles {
 
         magazines[] = {"rhs_mag_30Rnd_556x45_Mk262_Stanag","rhs_mag_30Rnd_556x45_Mk262_Stanag"};
         respawnMagazines[] = {"rhs_mag_30Rnd_556x45_Mk262_Stanag","rhs_mag_30Rnd_556x45_Mk262_Stanag"};
+
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m4a1_blockII_KAC_bk","rhsusf_acc_nt4_black","rhsusf_acc_anpeq15_bk","rhsusf_acc_g33_xps3",{"rhs_mag_30Rnd_556x45_Mk262_Stanag",30},{},"rhsusf_acc_grip3"},{},{},{"rhs_uniform_cu_ocp",{{"ACE_elasticBandage",13},{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",5},{"ACE_morphine",5},{"ACE_epinephrine",5}}},{"V_PlateCarrier2_blk",{{"ACE_elasticBandage",10},{"HandGrenade",3,1},{"rhs_mag_30Rnd_556x45_Mk262_Stanag",10,30}}},{},"rhsusf_hgu56p_visor_black","",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGogglesB_blk_F"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
     };
   
   class B_JointStrikeForce_Medic_01 : B_JointStrikeForce_Rifleman_01 {
@@ -413,6 +443,22 @@ class CfgVehicles {
         respawnMagazines[] = {"rhsusf_200rnd_556x45_mixed_box","rhsusf_200rnd_556x45_mixed_box"};
 
         backpack = "rhsusf_assault_eagleaiii_ocp";
+
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m249_pip","rhsusf_acc_nt4_black","","rhsusf_acc_g33_xps3",{"rhsusf_200rnd_556x45_mixed_box",200},{},"rhsusf_acc_saw_bipod"},{},{},{"rhs_uniform_cu_ocp",{{"ACE_elasticBandage",13},{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",5},{"ACE_morphine",5},{"ACE_epinephrine",5}}},{"V_PlateCarrier2_blk",{{"ACE_elasticBandage",10},{"HandGrenade",3,1},{"rhsusf_200rnd_556x45_mixed_box",1,200}}},{"rhsusf_assault_eagleaiii_ocp",{{"rhsusf_200rnd_556x45_mixed_box",4,200}}},"rhsusf_hgu56p_visor_black","",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGogglesB_blk_F"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
     };
   
   class B_JointStrikeForce_AT_01 : B_JointStrikeForce_Rifleman_01 {
@@ -437,6 +483,21 @@ class CfgVehicles {
         respawnMagazines[] = {"rhs_mag_30Rnd_556x45_Mk262_Stanag","Titan_AT","rhs_mag_30Rnd_556x45_Mk262_Stanag"};
 
         backpack = "rhsusf_assault_eagleaiii_ocp";
+
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m4a1_blockII_KAC_bk","rhsusf_acc_nt4_black","rhsusf_acc_anpeq15_bk","rhsusf_acc_g33_xps3",{"rhs_mag_30Rnd_556x45_Mk262_Stanag",30},{},"rhsusf_acc_grip3"},{"launch_B_Titan_short_F","","","",{"Titan_AT",1},{},""},{},{"rhs_uniform_cu_ocp",{{"ACE_elasticBandage",13},{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",5},{"ACE_morphine",5},{"ACE_epinephrine",5}}},{"V_PlateCarrier2_blk",{{"ACE_elasticBandage",10},{"HandGrenade",3,1},{"rhs_mag_30Rnd_556x45_Mk262_Stanag",10,30}}},{"rhsusf_assault_eagleaiii_ocp",{{"Titan_AT",2,1},{"rhs_mag_30Rnd_556x45_Mk262_Stanag",4,30}}},"rhsusf_hgu56p_visor_black","",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGogglesB_blk_F"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
     };
   
   class B_JointStrikeForce_Sniper_01 : B_JointStrikeForce_Rifleman_01 {
@@ -461,6 +522,21 @@ class CfgVehicles {
         respawnMagazines[] = {"rhsusf_mag_10Rnd_STD_50BMG_mk211","rhsusf_mag_15Rnd_9x19_FMJ","rhsusf_mag_10Rnd_STD_50BMG_mk211","rhsusf_mag_15Rnd_9x19_FMJ"};
 
         backpack = "rhsusf_falconii_mc";
+
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_M107","","","rhsusf_acc_premier_mrds",{"rhsusf_mag_10Rnd_STD_50BMG_mk211",10},{},""},{},{"rhsusf_weap_m9","","","",{"rhsusf_mag_15Rnd_9x19_FMJ",15},{},""},{"rhs_uniform_cu_ocp",{{"ACE_elasticBandage",13},{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",5},{"ACE_morphine",5},{"ACE_epinephrine",5}}},{"V_PlateCarrier2_blk",{{"ACE_elasticBandage",10},{"HandGrenade",3,1},{"rhsusf_mag_10Rnd_STD_50BMG_mk211",2,10},{"rhsusf_mag_15Rnd_9x19_FMJ",2,15}}},{"rhsusf_falconii_mc",{{"rhsusf_mag_10Rnd_STD_50BMG_mk211",3,10},{"rhsusf_mag_15Rnd_9x19_FMJ",6,15}}},"rhsusf_hgu56p_visor_black","",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGogglesB_blk_F"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
     };
   
   class B_JointStrikeForce_Grenadier_01 : B_JointStrikeForce_Rifleman_01 {
@@ -483,6 +559,21 @@ class CfgVehicles {
 
         magazines[] = {"rhs_mag_30Rnd_556x45_Mk262_Stanag","rhs_mag_30Rnd_556x45_Mk262_Stanag"};
         respawnMagazines[] = {"rhs_mag_30Rnd_556x45_Mk262_Stanag","rhs_mag_30Rnd_556x45_Mk262_Stanag"};
+
+        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m4a1_blockII_M203_bk","rhsusf_acc_nt4_black","rhsusf_acc_anpeq15side_bk","rhsusf_acc_g33_xps3",{"rhs_mag_30Rnd_556x45_Mk262_Stanag",30},{},""},{},{},{"rhs_uniform_cu_ocp",{{"ACE_elasticBandage",13},{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",5},{"ACE_morphine",5},{"ACE_epinephrine",5}}},{"V_PlateCarrierGL_blk",{{"ACE_elasticBandage",10},{"HandGrenade",3,1},{"rhs_mag_30Rnd_556x45_Mk262_Stanag",6,30},{"1Rnd_HE_Grenade_shell",10,1}}},{},"rhsusf_hgu56p_visor_black","",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGogglesB_blk_F"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
     };
   
   // Vehicles
