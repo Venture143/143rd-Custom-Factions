@@ -45,7 +45,7 @@ class CfgGroups {
                 class B_JointStrikeForce_infantry_ghosts {
                     name = "Ghosts";
                     side = 1;
-                    faction = "B_B_JointStrikeForce";
+                    faction = "B_JointStrikeForce";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -105,10 +105,10 @@ class CfgGroups {
                     };
                 };
           
-                            class B_JointStrikeForce_infantry_pioneers {
+                class B_JointStrikeForce_infantry_pioneers {
                     name = "Pioneers";
                     side = 1;
-                    faction = "B_B_JointStrikeForce";
+                    faction = "B_JointStrikeForce";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -181,7 +181,7 @@ class CfgGroups {
             class B_JointStrikeForce_mechanized_mechanized_ghosts {
                     name = "Mechanized Ghosts";
                     side = 1;
-                    faction = "B_B_JointStrikeForce";
+                    faction = "B_JointStrikeForce";
                     icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
                     rarityGroup = 0.5;
 
@@ -244,7 +244,7 @@ class CfgGroups {
                 class B_JointStrikeForce_mechanized_mechanized_pioneers {
                     name = "Mechanized Pioneers";
                     side = 1;
-                    faction = "B_B_JointStrikeForce";
+                    faction = "B_JointStrikeForce";
                     icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
                     rarityGroup = 0.5;
 
@@ -326,7 +326,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Squad Leader";
         side = 1;
-        faction = "B_B_JointStrikeForce";
+        faction = "B_JointStrikeForce";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -350,7 +350,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Rifleman";
         side = 1;
-        faction = "B_B_JointStrikeForce";
+        faction = "B_JointStrikeForce";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -372,7 +372,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Medic";
         side = 1;
-        faction = "B_B_JointStrikeForce";
+        faction = "B_JointStrikeForce";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -396,7 +396,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Autorifleman";
         side = 1;
-        faction = "B_B_JointStrikeForce";
+        faction = "B_JointStrikeForce";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -420,7 +420,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AT";
         side = 1;
-        faction = "B_B_JointStrikeForce";
+        faction = "B_JointStrikeForce";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -444,7 +444,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Sniper";
         side = 1;
-        faction = "B_B_JointStrikeForce";
+        faction = "B_JointStrikeForce";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -468,7 +468,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Grenadier";
         side = 1;
-        faction = "B_B_JointStrikeForce";
+        faction = "B_JointStrikeForce";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -490,23 +490,23 @@ class CfgVehicles {
     scopeCurator = 2;
     displayName = "M5A2 Schwarzkopf";
     side = 1;
-    faction = "B_B_JointStrikeForce";
+    faction = "B_JointStrikeForce";
     crew = "B_JointStrikeForce_Squad_Leader_01";
    };
   class B_JointStrikeForce_M118_Fastback_01 : RHS_M6 {
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "M118 Fastback";
-    side = 1;
-    faction = "B_B_JointStrikeForce";
-    crew = "B_JointStrikeForce_Squad_Leader_01";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M118 Fastback";
+        side = 1;
+        faction = "B_JointStrikeForce";
+        crew = "B_JointStrikeForce_Squad_Leader_01";
    };
   class B_JointStrikeForce_M320_Spartan_01 : rhsusf_m109d_usarmy {
         scope = 2;
         scopeCurator = 2;
         displayName = "M320 Spartan";
         side = 1;
-        faction = "B_B_JointStrikeForce";
+        faction = "B_JointStrikeForce";
         crew = "B_JointStrikeForce_Squad_Leader_01";
     };
   class B_JointStrikeForce_AH_10_Blackfoot_01 : B_Heli_Attack_01_dynamicLoadout_F {
@@ -514,7 +514,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AH-10 Blackfoot";
         side = 1;
-        faction = "B_B_JointStrikeForce";
+        faction = "B_JointStrikeForce";
         crew = "B_JointStrikeForce_Squad_Leader_01";
     };
   class B_JointStrikeForce_V120_Valkyrie_01 : B_T_VTOL_01_infantry_F {
@@ -522,23 +522,23 @@ class CfgVehicles {
       scopeCurator = 2;
       displayName = "V-120 Valkyrie";
       side = 1;
-      faction = "B_B_JointStrikeForce";
+      faction = "B_JointStrikeForce";
       crew = "B_JointStrikeForce_Squad_Leader_01";
     };
-  class B_JointStrikeForce_A20_Razorback_01 : B_Plane_CAS_01_dynamicLoadout_F {
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "A-20 Razorback";
-    side = 1;
-    faction = "B_B_JointStrikeForce";
-    crew = "B_JointStrikeForce_Squad_Leader_01";
-   };
-  class B_JointStrikeForce_PD_6Rottweiler_01 : USAF_MQ9 {    
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "PD-6 Rottweiler";
-    side = 1;
-    faction = "B_B_JointStrikeForce";
-    crew = "B_JointStrikeForce_Squad_Leader_01";
-   };
+    class B_JointStrikeForce_A20_Razorback_01 : B_Plane_CAS_01_dynamicLoadout_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "A-20 Razorback";
+        side = 1;
+        faction = "B_JointStrikeForce";
+        crew = "B_JointStrikeForce_Squad_Leader_01";
+    };
+    class B_JointStrikeForce_PD_6Rottweiler_01 : USAF_MQ9 {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "PD-6 Rottweiler";
+        side = 1;
+        faction = "B_JointStrikeForce";
+        crew = "B_JointStrikeForce_Squad_Leader_01";
+    };
  };
