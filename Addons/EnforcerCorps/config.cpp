@@ -55,6 +55,7 @@ class CfgVehicles {
   class B_Heli_Attack_01_dynamicLoadout_F;
   class O_Plane_Fighter_02_F;
   class B_UAV_02_dynamicLoadout_F;
+  class B_APC_Wheeled_01_cannon_F;
   
   // doods
   class I_Enforcer_Corps_Squad_Leader_01 : I_Soldier_SL_F {
