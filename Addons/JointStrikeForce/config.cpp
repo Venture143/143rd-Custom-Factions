@@ -320,10 +320,12 @@ class CfgVehicles {
   class B_Plane_CAS_01_dynamicLoadout_F;
   class USAF_MQ9;
   class B_Heli_Attack_01_dynamicLoadout_F;
+
+  class B_Import_Soldier : B_Soldier_SL_F { scope = 0; class EventHandlers;}
   
   // units
   
-  class B_JointStrikeForce_Squad_Leader_01 : B_Soldier_SL_F {
+  class B_JointStrikeForce_Squad_Leader_01 : B_Import_Soldier {
         author = "WM. Loli";
         scope = 2;
         scopeCurator = 2;
@@ -362,7 +364,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
     };
   
-  class B_JointStrikeForce_Rifleman_01 : B_Soldier_SL_F {
+  class B_JointStrikeForce_Rifleman_01 : B_Import_Soldier {
         author = "WM. Loli";
         scope = 2;
         scopeCurator = 2;
