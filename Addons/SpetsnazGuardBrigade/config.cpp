@@ -336,8 +336,9 @@ class CfgVehicles {
   class O_Plane_Fighter_02_F;
   class O_UAV_02_dynamicLoadout_F;
   
+  class O_RussianRepublic_Import_dude : min_rf_spetsnaz_TL {scope = 0; class EventHandlers; };
   //doods
-  class O_Russian_Republic_Squad_Leader_01 : min_rf_spetsnaz_TL {
+  class O_Russian_Republic_Squad_Leader_01 : O_RussianRepublic_Import_dude {
         author = "WM. Loli";
         scope = 2;
         scopeCurator = 2;
@@ -362,7 +363,6 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"arifle_min_rf_ak_12_grip","muzzle_min_rf_tgp_a","acc_min_rf_perst_1ik","optic_min_rf_eotech_553",{"30Rnd_min_rf_545x39_Mag",30},{},""},{},{"rhs_weap_pya","","","",{"rhs_mag_9x19_17",17},{},""},{"min_rf_tactical_skol",{{"ACE_elasticBandage",20},{"ACE_morphine",5},{"ACE_epinephrine",5},{"30Rnd_min_rf_545x39_Mag",1,30}}},{"min_rf_armor_vest_black",{{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",8},{"ACE_elasticBandage",5},{"30Rnd_min_rf_545x39_Mag",1,30},{"rhs_mag_9x19_17",5,17},{"HandGrenade",3,1},{"ACE_M84",4,1},{"SmokeShell",10,1}}},{"TFAR_rt1523g_bwmod",{{"30Rnd_min_rf_545x39_Mag",6,30}}},"min_rf_helmet_recon_black","min_rf_balaclava_goggles_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles_OPFOR"}};
 
-        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -401,7 +401,6 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"arifle_min_rf_aek_a545","muzzle_min_rf_tgp_a","acc_min_rf_perst_1ik","optic_min_rf_eotech_553",{"30Rnd_min_rf_545x39_Mag",30},{},""},{},{},{"min_rf_tactical_skol",{{"ACE_elasticBandage",20},{"ACE_morphine",5},{"ACE_epinephrine",5},{"30Rnd_min_rf_545x39_Mag",1,30}}},{"min_rf_armor_vest_black",{{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",8},{"ACE_elasticBandage",5},{"HandGrenade",3,1},{"ACE_M84",4,1},{"SmokeShell",10,1},{"30Rnd_min_rf_545x39_Mag",5,30}}},{},"min_rf_helmet_recon_black","min_rf_balaclava_goggles_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles_OPFOR"}};
 
-        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -440,7 +439,6 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"LMG_min_rf_6p69","","","optic_Holosight_smg_blk_F",{"150Rnd_762x54_Box_Tracer",150},{},""},{},{},{"min_rf_tactical_skol",{{"ACE_elasticBandage",20},{"ACE_morphine",5},{"ACE_epinephrine",5}}},{"min_rf_armor_vest_AR_black",{{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",8},{"ACE_elasticBandage",5},{"HandGrenade",3,1},{"ACE_M84",4,1},{"SmokeShell",10,1}}},{"min_rf_torna_black",{{"100Rnd_min_rf_762x54_T_Box",6,100}}},"min_rf_helmet_recon_black","min_rf_balaclava_goggles_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles_OPFOR"}};
 
-        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -477,7 +475,6 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"arifle_min_rf_ak_12_gp","muzzle_min_rf_tgp_a","acc_min_rf_perst_1ik","optic_min_rf_eotech_553",{"30Rnd_min_rf_545x39_Mag",30},{},""},{},{},{"min_rf_tactical_skol",{{"ACE_elasticBandage",20},{"ACE_morphine",5},{"ACE_epinephrine",5},{"30Rnd_min_rf_545x39_Mag",1,30}}},{"min_rf_armor_vest_GL_black",{{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",8},{"ACE_elasticBandage",5},{"HandGrenade",3,1},{"ACE_M84",4,1},{"SmokeShell",10,1},{"1Rnd_HE_Grenade_shell",5,1},{"30Rnd_min_rf_545x39_Mag",3,30}}},{},"min_rf_helmet_recon_black","min_rf_balaclava_goggles_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles_OPFOR"}};
 
-        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -514,7 +511,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"srifle_min_rf_orsis_t5000","muzzle_snds_338_black","","optic_DMS",{"5Rnd_min_rf_338_Mag",5},{},""},{},{"rhs_weap_pp2000_folded","","","rhs_acc_1p87",{"rhs_mag_9x19mm_7n21_20",20},{},""},{"min_rf_tactical_skol",{{"ACE_elasticBandage",20},{"ACE_morphine",5},{"ACE_epinephrine",5},{"rhs_mag_9x19mm_7n21_20",1,20}}},{"min_rf_armor_vest_M_black",{{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",8},{"ACE_elasticBandage",5},{"HandGrenade",3,1},{"ACE_M84",4,1},{"SmokeShell",10,1},{"5Rnd_min_rf_338_Mag",3,5}}},{},"min_rf_helmet_recon_black","min_rf_balaclava_goggles_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles_OPFOR"}};
 
-        class EventHandlers;
+
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -553,7 +550,6 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"arifle_min_rf_aek_a545","muzzle_min_rf_tgp_a","acc_min_rf_perst_1ik","optic_min_rf_eotech_553",{"30Rnd_min_rf_545x39_Mag",30},{},""},{},{},{"min_rf_tactical_skol",{{"ACE_elasticBandage",20},{"ACE_morphine",5},{"ACE_epinephrine",5}}},{"min_rf_armor_vest_black",{{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",8},{"ACE_elasticBandage",5},{"HandGrenade",3,1},{"ACE_M84",4,1},{"SmokeShell",10,1}}},{"min_rf_torna_black",{{"ACE_surgicalKit",1},{"ACE_tourniquet",4},{"ACE_splint",20},{"ACE_salineIV_250",30},{"ACE_morphine",20},{"ACE_epinephrine",20},{"ACE_elasticBandage",80},{"30Rnd_min_rf_545x39_Mag",8,30}}},"min_rf_helmet_recon_black","min_rf_balaclava_goggles_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles_OPFOR"}};
 
-        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -591,8 +587,7 @@ class CfgVehicles {
         backpack = "min_rf_torna_black";
 
         ALiVE_orbatCreator_loadout[] = {{"arifle_min_rf_aek_a545","muzzle_min_rf_tgp_a","acc_min_rf_perst_1ik","optic_min_rf_eotech_553",{"30Rnd_min_rf_545x39_Mag",30},{},""},{"launch_min_rf_titan_short","","","",{"Titan_AT",1},{},""},{},{"min_rf_tactical_skol",{{"ACE_elasticBandage",20},{"ACE_morphine",5},{"ACE_epinephrine",5},{"30Rnd_min_rf_545x39_Mag",1,30}}},{"min_rf_armor_vest_black",{{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",8},{"ACE_elasticBandage",5},{"HandGrenade",3,1},{"ACE_M84",4,1},{"SmokeShell",10,1},{"30Rnd_min_rf_545x39_Mag",5,30}}},{"min_rf_torna_black",{{"Titan_AP",2,1},{"Titan_AT",2,1}}},"min_rf_helmet_recon_black","min_rf_balaclava_goggles_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles_OPFOR"}};
-
-        class EventHandlers;        
+    
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
