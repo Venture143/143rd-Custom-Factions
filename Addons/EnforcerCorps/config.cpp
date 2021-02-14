@@ -188,19 +188,19 @@ class CfgGroups {
             class Mechanized {
                 name = "Mechanized Infantry";
 
-                    class i_enforcer_corps_mechanized_mechanized_kommandos {
-                        name = "Mechanized Kommandos";
-                        side = 2;
-                        faction = "I_EnforcerCorps";
-                        icon = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
-                        rarityGroup = 0.5;
+                class i_enforcer_corps_mechanized_mechanized_kommandos {
+                    name = "Mechanized Kommandos";
+                    side = 2;
+                    faction = "I_EnforcerCorps";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_mech_inf.paa";
+                    rarityGroup = 0.5;
 
-                        class Unit0 {
+                    class Unit0 {
                             position[] = {0,0,0};
                             rank = "SERGEANT";
                             side = 2;
                             vehicle = "I_Enforcer_Corps_AMZ_26_Badger_IFV_01";
-                        };
+                    };
                         class Unit1 {
                             position[] = {-18,-24,0};
                             rank = "PRIVATE";
@@ -249,9 +249,9 @@ class CfgGroups {
                             side = 2;
                             vehicle = "I_Enforcer_Corps_Rifleman_01";
                         };
-                    };
+                };
 
-                    class i_enforcer_corps_mechanized_mechanized_grenadiers {
+                class i_enforcer_corps_mechanized_mechanized_grenadiers {
                         name = "Mechanized Grenadiers";
                         side = 2;
                         faction = "I_EnforcerCorps";
@@ -312,10 +312,8 @@ class CfgGroups {
                             side = 2;
                             vehicle = "I_Enforcer_Corps_Grenadier_01";
                         };
-                    };
-
+               
                 };
-
             };
         };
     };
