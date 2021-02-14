@@ -322,6 +322,8 @@ class CfgGroups {
     };
 };
 
+class CBA_Extended_EventHandlers_base;
+
 class CfgVehicles {
   //base
   class min_rf_spetsnaz_TL;

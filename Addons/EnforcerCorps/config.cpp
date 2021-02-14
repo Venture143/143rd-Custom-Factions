@@ -319,6 +319,8 @@ class CfgGroups {
     };
 };
 
+class CBA_Extended_EventHandlers_base;
+
 class CfgVehicles {
   //base units
   class I_Soldier_SL_F;
