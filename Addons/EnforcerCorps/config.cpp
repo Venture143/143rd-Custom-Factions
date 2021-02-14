@@ -43,6 +43,151 @@ class CfgGroups {
         class I_EnforcerCorps {
             name = "Enforcer Corps";
             
+            class Infantry {
+                name = "Infantry";
+
+                class i_enforcer_corps_infantry_kommandos {
+                    name = "Kommandos";
+                    side = 2;
+                    faction = "I_EnforcerCorps";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Squad_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Rifleman_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Rifleman_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Rifleman_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Rifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Marksman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Marksman_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Medic_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Rifleman_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Rifleman_01";
+                    };
+                };
+
+                class i_enforcer_corps_infantry_grenadiers {
+                    name = "Grenadiers";
+                    side = 2;
+                    faction = "I_EnforcerCorps";
+                    icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Squad_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Rifleman_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Rifleman_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_AT_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Autorifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Asst_Autorifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Grenadier_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Grenadier_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Medic_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 2;
+                        vehicle = "I_Enforcer_Corps_Grenadier_01";
+                    };
+                };
+            };
+
+            class Mechanized {
+                name = "Mechanized Infantry";
+            };
         };
     };
 };
