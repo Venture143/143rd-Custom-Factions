@@ -302,6 +302,7 @@ class CfgGroups {
                         side = 1;
                         vehicle = "B_JointStrikeForce_M118_Fastback_01";
                     };
+                };
           };
       };
     };
