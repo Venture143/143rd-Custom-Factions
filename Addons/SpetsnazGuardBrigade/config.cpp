@@ -397,6 +397,8 @@ class CfgVehicles {
         magazines[] = {"30Rnd_min_rf_545x39_Mag","30Rnd_min_rf_545x39_Mag"};
         respawnMagazines[] = {"30Rnd_min_rf_545x39_Mag","30Rnd_min_rf_545x39_Mag"};
 
+        backpack = "";
+
         ALiVE_orbatCreator_loadout[] = {{"arifle_min_rf_aek_a545","muzzle_min_rf_tgp_a","acc_min_rf_perst_1ik","optic_min_rf_eotech_553",{"30Rnd_min_rf_545x39_Mag",30},{},""},{},{},{"min_rf_tactical_skol",{{"ACE_elasticBandage",20},{"ACE_morphine",5},{"ACE_epinephrine",5},{"30Rnd_min_rf_545x39_Mag",1,30}}},{"min_rf_armor_vest_black",{{"ACE_CableTie",3},{"ACE_tourniquet",4},{"ACE_splint",8},{"ACE_elasticBandage",5},{"HandGrenade",3,1},{"ACE_M84",4,1},{"SmokeShell",10,1},{"30Rnd_min_rf_545x39_Mag",5,30}}},{},"min_rf_helmet_recon_black","min_rf_balaclava_goggles_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles_OPFOR"}};
 
         class EventHandlers;
