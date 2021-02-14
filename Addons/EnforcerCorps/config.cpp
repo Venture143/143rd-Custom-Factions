@@ -357,7 +357,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"rhs_weap_vhsd2_ct15x","rhsusf_acc_nt4_black","ACE_acc_pointer_green","",{"rhssaf_30rnd_556x45_Tracers_G36",30},{},"rhsusf_acc_grip2"},{},{"rhs_weap_cz99","","","",{"rhssaf_mag_15Rnd_9x19_FMJ",15},{},""},{"U_O_CombatUniform_oucamo",{{"ACE_elasticBandage",20},{"ACE_CableTie",3},{"ACE_splint",4},{"ACE_tourniquet",4},{"SmokeShell",1,1}}},{"V_EOD_blue_F",{{"ACE_elasticBandage",2},{"HandGrenade",2,1},{"SmokeShell",2,1}}},{"TFAR_rt1523g_black",{{"rhssaf_30rnd_556x45_Tracers_G36",10,30},{"rhssaf_mag_15Rnd_9x19_FMJ",6,15}}},"H_PASGT_basic_blue_F","G_CBRN_S10",{},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"}};
 
-
+        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -396,7 +396,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"rhs_weap_vhsd2_ct15x","rhsusf_acc_nt4_black","ACE_acc_pointer_green","",{"rhssaf_30rnd_556x45_Tracers_G36",30},{},"rhsusf_acc_grip2"},{},{},{"U_O_CombatUniform_oucamo",{{"ACE_tourniquet",4},{"HandGrenade",3,1},{"ACE_M84",1,1}}},{"V_EOD_blue_F",{{"ACE_elasticBandage",20},{"ACE_CableTie",3},{"ACE_splint",3}}},{"B_LegStrapBag_black_F",{{"ACE_elasticBandage",2},{"rhssaf_30rnd_556x45_Tracers_G36",13,30}}},"H_PASGT_basic_blue_F","G_CBRN_S10",{},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"}};
 
-
+        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -435,7 +435,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"rhs_weap_vhsd2_ct15x","rhsusf_acc_nt4_black","ACE_acc_pointer_green","",{"rhssaf_30rnd_556x45_Tracers_G36",30},{},"rhsusf_acc_grip2"},{"launch_O_Vorona_green_F","","","",{"Vorona_HEAT",1},{},""},{},{"U_O_CombatUniform_oucamo",{{"ACE_tourniquet",4},{"HandGrenade",3,1},{"ACE_M84",1,1}}},{"V_EOD_blue_F",{{"ACE_elasticBandage",20},{"ACE_CableTie",3},{"ACE_splint",3}}},{"min_rf_torna_black",{{"ACE_elasticBandage",2},{"Vorona_HEAT",2,1},{"rhssaf_30rnd_556x45_Tracers_G36",19,30}}},"H_PASGT_basic_blue_F","G_CBRN_S10",{},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"}};
 
-
+        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -474,7 +474,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"rhs_weap_minimi_para_railed","rhsusf_acc_rotex5_grey","ACE_acc_pointer_green","rhsusf_acc_eotech_552",{"rhsusf_200rnd_556x45_mixed_box",200},{},"rhsusf_acc_kac_grip_saw_bipod"},{},{},{"U_O_CombatUniform_oucamo",{{"ACE_tourniquet",4},{"HandGrenade",3,1},{"ACE_M84",1,1}}},{"V_EOD_blue_F",{{"ACE_elasticBandage",20},{"ACE_CableTie",3},{"ACE_splint",3}}},{"B_LegStrapBag_black_F",{{"ACE_elasticBandage",2},{"rhsusf_200rnd_556x45_mixed_box",1,200}}},"H_PASGT_basic_blue_F","G_CBRN_S10",{},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"}};
 
-
+        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -513,7 +513,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"rhs_weap_vhsd2_ct15x","rhsusf_acc_nt4_black","ACE_acc_pointer_green","",{"rhssaf_30rnd_556x45_Tracers_G36",30},{},"rhsusf_acc_grip2"},{},{},{"U_O_CombatUniform_oucamo",{{"ACE_tourniquet",4},{"HandGrenade",3,1},{"ACE_M84",1,1}}},{"V_EOD_blue_F",{{"ACE_elasticBandage",20},{"ACE_CableTie",3},{"ACE_splint",3}}},{"min_rf_torna_black",{{"ACE_elasticBandage",2},{"rhssaf_30rnd_556x45_Tracers_G36",13,30},{"rhsusf_200rnd_556x45_mixed_box",4,200}}},"H_PASGT_basic_blue_F","G_CBRN_S10",{},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"}};
 
-
+        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -552,7 +552,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"srifle_LRR_F","","","optic_DMS",{"7Rnd_408_Mag",7},{},""},{},{"rhs_weap_cz99","","","",{"rhssaf_mag_15Rnd_9x19_FMJ",15},{},""},{"U_O_CombatUniform_oucamo",{{"ACE_tourniquet",4},{"HandGrenade",3,1},{"ACE_M84",1,1}}},{"V_EOD_blue_F",{{"ACE_elasticBandage",20},{"ACE_CableTie",3},{"ACE_splint",3}}},{"B_LegStrapBag_black_F",{{"7Rnd_408_Mag",4,7},{"rhssaf_mag_15Rnd_9x19_FMJ",4,15}}},"H_PASGT_basic_blue_F","G_CBRN_S10",{},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"}};
 
-
+        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -591,7 +591,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"rhs_weap_vhsd2_ct15x","rhsusf_acc_nt4_black","ACE_acc_pointer_green","",{"rhssaf_30rnd_556x45_Tracers_G36",30},{},"rhsusf_acc_grip2"},{},{},{"U_O_CombatUniform_oucamo",{{"ACE_tourniquet",4},{"HandGrenade",3,1},{"ACE_M84",1,1}}},{"V_EOD_blue_F",{{"ACE_elasticBandage",20},{"ACE_CableTie",3},{"ACE_splint",3}}},{"LOP_B_KB_Med_tub",{{"ACE_elasticBandage",50},{"ACE_surgicalKit",1},{"ACE_salineIV_250",40},{"ACE_morphine",15},{"ACE_epinephrine",15},{"ACE_splint",12},{"rhssaf_30rnd_556x45_Tracers_G36",10,30}}},"H_PASGT_basic_blue_F","G_CBRN_S10",{},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"}};
 
-
+        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -630,7 +630,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"rhs_weap_vhsd2_bg_ct15x","rhsusf_acc_nt4_black","ACE_acc_pointer_green","",{"rhssaf_30rnd_556x45_Tracers_G36",30},{},""},{},{},{"U_O_CombatUniform_oucamo",{{"ACE_tourniquet",4},{"HandGrenade",3,1},{"ACE_M84",1,1}}},{"V_EOD_blue_F",{{"ACE_elasticBandage",20},{"ACE_CableTie",3},{"ACE_splint",3}}},{"B_LegStrapBag_black_F",{{"ACE_elasticBandage",2},{"rhssaf_30rnd_556x45_Tracers_G36",9,30},{"1Rnd_HE_Grenade_shell",6,1}}},"H_PASGT_basic_blue_F","G_CBRN_S10",{},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr","NVGogglesB_blk_F"}};
 
-
+        class EventHandlers;
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
