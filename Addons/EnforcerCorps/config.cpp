@@ -21,7 +21,7 @@ class CfgPatches {
     requiredAddons[] = {
       "A3_Characters_F",
       "rhs_cti_insurgents",
-      "rhsgref_c_troops",
+      "rhsgref_c_troops","CFP_O_IRARMY"
     };
     author = "WM. Loli";
     authors[] = {"WM. Loli"};
