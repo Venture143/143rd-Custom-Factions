@@ -856,15 +856,6 @@ class CfgVehicles {
 	class Deffkopta_02_0;
 	class MDK_0;
 	class Valkyrie_Looted_0;
-	class ShootaBoy1_OP;
-	class Naked1_OP;
-	class ShootaBoy2_OP;
-	class TankBusta1_OP;
-	class TankBusta2_OP;
-	class ArdBoy1_OP;
-	class ArdBoy2_OP;
-	class Boss1_OP;//Nob
-	class Boss2_OP;//Warboss
 
 	// Base Ork Profile
 	class DK143_Base_OrkBoy : O_Soldier_base_F {
@@ -945,15 +936,123 @@ class CfgVehicles {
 		respawnMagazines[] = {mag_10(TIOW_Krieg_LauncherFrag_mag),  mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
     	};
     // Stuff Ported from TIOW
-	class DK143_O_Shoota1 : ShootaBoy1_OP {faction = "DK143_O_OrkHordez";};
-	class DK143_O_NakedOrk : Naked1_OP {faction = "DK143_O_OrkHordez";};
-	class DK143_O_Shoota2: ShootaBoy2_OP {faction = "DK143_O_OrkHordez";};
-	class DK143_O_TankBusta1 : TankBusta1_OP {faction = "DK143_O_OrkHordez";};
-	class DK143_O_TankBusta2 : TankBusta2_OP  {faction = "DK143_O_OrkHordez";};
-	class DK143_O_Ardboyz1 : ArdBoy1_OP  {faction = "DK143_O_OrkHordez";};
-	class DK143_O_Ardboyz2 : ArdBoy2_OP {faction = "DK143_O_OrkHordez";};
-	class DK143_O_Nob : Boss1_OP {faction = "DK143_O_OrkHordez"; displayName = "Nob";};//Nob
-	class DK143_O_WarBoss : Boss2_OP {faction = "DK143_O_OrkHordez"; displayname = "Warboss";};//Warboss
+	class DK143_O_Shoota1 : DK143_Base_OrkBoy {
+		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Shoota 1";
+
+		linkedItems[] = {"ShootaBoyHelm1"};
+		respawnlinkedItems[] = {"ShootaBoyHelm1"};
+	
+		weapons[] = {"Shoota1"};
+		respawnWeapons[] = {"Shoota1"};
+		magazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+		respawnMagazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	};
+	class DK143_O_NakedOrk : DK143_Base_OrkBoy {
+		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork boy";
+
+		linkedItems[] = {};
+		respawnlinkedItems[] = {};
+	
+		weapons[] = {"Shoota1"};
+		respawnWeapons[] = {"Shoota1"};
+		magazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+		respawnMagazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	};
+	class DK143_O_Shoota2: DK143_Base_OrkBoy {
+		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Shoota 2";
+
+		linkedItems[] = {"ShootaBoyHelm2"};
+		respawnlinkedItems[] = {"ShootaBoyHelm2"};
+	
+		weapons[] = {"Shoota1"};
+		respawnWeapons[] = {"Shoota1"};
+		magazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+		respawnMagazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	};
+	class DK143_O_TankBusta1 : DK143_Base_OrkBoy {
+		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Tankbusta 1";
+		uniformClass = "TankBusta1Uni_OP";
+		linkedItems[] = {"TankBustaGear1", "TankBustaHelm1"};
+		respawnlinkedItems[] = {"TankBustaGear1", "TankBustaHelm1"};
+	
+		weapons[] = {"TankBustaLauncha1"};
+		respawnWeapons[] = {"TankBustaLauncha1"};
+		magazines[] = {mag_3(TankBustaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+		respawnMagazines[] = {mag_3(TankBustaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	};
+	class DK143_O_TankBusta2 : DK143_Base_OrkBoy  {
+		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Tankbusta 2";
+		uniformClass = "TankBusta1Uni_OP";
+		linkedItems[] = {"TankBustaGear2", "TankBustaHelm2"};
+		respawnlinkedItems[] = {"TankBustaGear2", "TankBustaHelm2"};
+	
+		weapons[] = {"TankBustaLauncha1"};
+		respawnWeapons[] = {"TankBustaLauncha1"};
+		magazines[] = {mag_3(TankBustaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+		respawnMagazines[] = {mag_3(TankBustaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	};
+	class DK143_O_Ardboyz1 : DK143_Base_OrkBoy  {
+		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Ard Boy 1";
+		uniformClass = "ArdBoy1Uni_OP";
+		linkedItems[] = {"ArdBoyGear1", "ArdBoyHelm1"};
+		respawnlinkedItems[] = {"ArdBoyGear1", "ArdBoyHelm1"};
+
+		weapons[] = {"Shoota2"};
+		respawnWeapons[] = {"Shoota2"};
+		magazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+		respawnMagazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	};
+	class DK143_O_Ardboyz2 : DK143_Base_OrkBoy {
+		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Ard Boy 2";
+		uniformClass = "ArdBoy1Uni_OP";
+		linkedItems[] = {"ArdBoyGear2", "ArdBoyHelm2"};
+		respawnlinkedItems[] = {"ArdBoyGear2", "ArdBoyHelm2"};
+
+		weapons[] = {"Shoota2"};
+		respawnWeapons[] = {"Shoota2"};
+		magazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+		respawnMagazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag)};
+	};
+	class DK143_O_Nob : DK143_Base_OrkBoy {
+		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Nob";
+		uniformClass = "Boss1Uni_OP";
+		linkedItems[] = {"BossGear1", "BossHelm1"};
+		respawnlinkedItems[] = {"BossGear1", "BossHelm1"};
+	
+		weapons[] = {"Shoota1_A"};
+		respawnWeapons[] = {"Shoota1_A"};
+		magazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag),mag_2(KannonAPMag),mag_2(KannonHEMag)};
+		respawnMagazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag),mag_2(KannonAPMag),mag_2(KannonHEMag)};
+	};//Nob
+	class DK143_O_WarBoss : DK143_Base_OrkBoy {
+		scope = 2;
+        	scopeCurator = 2;
+        	displayName = "Ork Warboss";
+		uniformClass = "Boss1Uni_OP";
+		linkedItems[] = {"BossGear2", "BossHelm2"};
+		respawnlinkedItems[] = {"BossGear2", "BossHelm2"};
+	
+		weapons[] = {"Shoota1_A"};
+		respawnWeapons[] = {"Shoota1_A"};
+		magazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag),mag_2(KannonAPMag),mag_2(KannonHEMag)};
+		respawnMagazines[] = {mag_3(ShootaMag), mag_3(TIOW_chaos_krak_grenade_mag), mag_3(TIOW_chaos_frag_grenade_mag),mag_2(KannonAPMag),mag_2(KannonHEMag)};
+	};//Warboss
 	
 	//Vehicles
 	class DK143_O_OrkHordez_LR_Battlecannon_Black_OP : TIOW_Renegade_LR_Battlecannon_Black_OP {
