@@ -869,7 +869,7 @@ class CfgVehicles {
 		identityTypes[] = {"Ork_Head"};
 
 		uniformClass = "Naked1Uni_OP";
-		backpack = "Meow_Meow_Invisywisy_Invs";
+
 	};
     
 	// Melee Unit goes here
@@ -882,7 +882,7 @@ class CfgVehicles {
         	identityTypes[] = {"Ork_Head"};
 
         	uniformClass = "Naked1Uni_OP";
-		backpack = "Meow_Meow_Invisywisy_Invs";
+
 	    
 		linkedItems[] = {"ShootaBoyGear1"};
 		respawnlinkedItems[] = {"ShootaBoyGear1"};
